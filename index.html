@@ -1,0 +1,342 @@
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>具身智能学习路径 - 从入门到专家</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 字体 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;family=Open+Sans:wght@400;600&amp;display=swap"
+        rel="stylesheet">
+    <!-- 图标 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">具身智能学习路径</a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarNav" style="">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="learningPathDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            学习路径
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="learningPathDropdown">
+                            <li><a class="dropdown-item" href="learning-path/beginner.html">入门阶段</a></li>
+                            <li><a class="dropdown-item" href="learning-path/intermediate.html">进阶阶段</a></li>
+                            <li><a class="dropdown-item" href="learning-path/professional.html">专业阶段</a></li>
+                            <li><a class="dropdown-item" href="learning-path/expert.html">专家阶段</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="topicsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            主题探索
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="topicsDropdown">
+                            <li><a class="dropdown-item" href="topics/basic-concepts.html">基础概念</a></li>
+                            <li><a class="dropdown-item" href="topics/core-technologies.html">核心技术</a></li>
+                            <li><a class="dropdown-item" href="topics/system-design.html">系统设计</a></li>
+                            <li><a class="dropdown-item" href="topics/application-areas.html">应用领域</a></li>
+                            <li><a class="dropdown-item" href="topics/frontier-research.html">前沿研究</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html">资源中心</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">项目实践</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">关于</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <!-- <input class="form-control me-2" type="search" placeholder="搜索" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">搜索</button> -->
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主页横幅 -->
+    <header class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="display-4 fw-bold">具身智能学习路径</h1>
+                    <p class="lead">从入门到专家的系统化学习指南</p>
+                    <p class="mb-4">具身智能（Embodied
+                        AI）是指基于物理身体进行感知和行动的智能系统，通过与环境的交互获取信息、理解问题、做出决策并实现行动。本网站提供全面的学习资源，帮助您系统掌握这一前沿领域。</p>
+                    <div class="d-flex gap-3">
+                        <a href="learning-path/beginner.html" class="btn btn-primary btn-lg">开始学习</a>
+                        <a href="about.html" class="btn btn-outline-light btn-lg">了解更多</a>
+                    </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block">
+                    <img src="images/embodied-ai-illustration.svg" alt="具身智能示意图" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 学习路径概览 -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">学习路径概览</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill me-2">1</span>
+                                <h5 class="card-title mb-0">入门阶段</h5>
+                            </div>
+                            <h6 class="text-muted">3-6个月</h6>
+                            <p class="card-text">建立基础概念和知识框架，掌握相关领域的基础知识，熟悉具身智能的主要应用场景。</p>
+                            <a href="learning-path/beginner.html" class="btn btn-outline-primary">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill me-2">2</span>
+                                <h5 class="card-title mb-0">进阶阶段</h5>
+                            </div>
+                            <h6 class="text-muted">6-12个月</h6>
+                            <p class="card-text">深入理解具身智能的核心技术，掌握具身智能系统的设计与实现方法，解决中等复杂度的问题。</p>
+                            <a href="learning-path/intermediate.html" class="btn btn-outline-primary">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill me-2">3</span>
+                                <h5 class="card-title mb-0">专业阶段</h5>
+                            </div>
+                            <h6 class="text-muted">12-24个月</h6>
+                            <p class="card-text">掌握具身智能的高级技术和方法，能够设计和实现复杂的具身智能系统，理解前沿研究。</p>
+                            <a href="learning-path/professional.html" class="btn btn-outline-primary">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill me-2">4</span>
+                                <h5 class="card-title mb-0">专家阶段</h5>
+                            </div>
+                            <h6 class="text-muted">24个月以上</h6>
+                            <p class="card-text">在具身智能某个细分领域达到专家水平，能够提出创新性的解决方案和研究方向，引领团队。</p>
+                            <a href="learning-path/expert.html" class="btn btn-outline-primary">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 热门主题 -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">热门主题探索</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/topics/reinforcement-learning.jpg" class="card-img-top" alt="深度强化学习">
+                        <div class="card-body">
+                            <h5 class="card-title">深度强化学习</h5>
+                            <p class="card-text">探索如何通过奖励信号训练智能体与环境交互，掌握从DQN到PPO的核心算法。</p>
+                            <a href="topics/core-technologies.html#reinforcement-learning"
+                                class="btn btn-sm btn-primary">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/topics/multimodal-perception.jpg" class="card-img-top" alt="多模态感知">
+                        <div class="card-body">
+                            <h5 class="card-title">多模态感知与融合</h5>
+                            <p class="card-text">学习如何整合视觉、语言、触觉等多种感知模态，构建更全面的环境理解能力。</p>
+                            <a href="topics/core-technologies.html#multimodal-perception"
+                                class="btn btn-sm btn-primary">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/topics/sim2real.jpg" class="card-img-top" alt="Sim2Real迁移">
+                        <div class="card-body">
+                            <h5 class="card-title">Sim2Real迁移技术</h5>
+                            <p class="card-text">探索如何将仿真环境中训练的模型成功迁移到真实世界，克服现实差距挑战。</p>
+                            <a href="topics/core-technologies.html#sim2real" class="btn btn-sm btn-primary">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 精选项目 -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">精选项目实践</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">基于强化学习的机器人技能学习</h5>
+                            <p class="card-text">使用深度强化学习训练机器人掌握复杂操作技能，实现从仿真到现实的迁移。</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="badge bg-warning text-dark me-2">中级到高级</span>
+                                    <span class="badge bg-info text-dark">6-8周</span>
+                                </div>
+                                <a href="projects.html#reinforcement-learning-robot"
+                                    class="btn btn-sm btn-outline-primary">查看项目</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">多模态交互的家庭服务机器人</h5>
+                            <p class="card-text">开发能理解自然语言、视觉和手势的交互式机器人系统，实现家庭服务功能。</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="badge bg-warning text-dark me-2">高级</span>
+                                    <span class="badge bg-info text-dark">12-16周</span>
+                                </div>
+                                <a href="projects.html#multimodal-home-robot"
+                                    class="btn btn-sm btn-outline-primary">查看项目</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 学习资源 -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">推荐学习资源</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>热门课程</h4>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="mb-0">CS285: Deep Reinforcement Learning</h6>
+                                <small class="text-muted">UC Berkeley</small>
+                            </div>
+                            <a href="resources.html#cs285" class="btn btn-sm btn-outline-primary">详情</a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="mb-0">CS231n: Convolutional Neural Networks</h6>
+                                <small class="text-muted">Stanford</small>
+                            </div>
+                            <a href="resources.html#cs231n" class="btn btn-sm btn-outline-primary">详情</a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="mb-0">CS287: Advanced Robotics</h6>
+                                <small class="text-muted">UC Berkeley</small>
+                            </div>
+                            <a href="resources.html#cs287" class="btn btn-sm btn-outline-primary">详情</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4>推荐书籍</h4>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="mb-0">《深度学习》</h6>
+                                <small class="text-muted">Ian Goodfellow, Yoshua Bengio &amp; Aaron Courville</small>
+                            </div>
+                            <a href="resources.html#deep-learning-book" class="btn btn-sm btn-outline-primary">详情</a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="mb-0">《Reinforcement Learning: An Introduction》</h6>
+                                <small class="text-muted">Richard S. Sutton &amp; Andrew G. Barto</small>
+                            </div>
+                            <a href="resources.html#rl-book" class="btn btn-sm btn-outline-primary">详情</a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="mb-0">《Probabilistic Robotics》</h6>
+                                <small class="text-muted">Sebastian Thrun, Wolfram Burgard &amp; Dieter Fox</small>
+                            </div>
+                            <a href="resources.html#probabilistic-robotics"
+                                class="btn btn-sm btn-outline-primary">详情</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <a href="resources.html" class="btn btn-primary">查看全部资源</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>具身智能学习路径</h5>
+                    <p class="text-muted">从入门到专家的系统化学习指南</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>快速链接</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none text-muted">首页</a></li>
+                        <li><a href="learning-path/beginner.html" class="text-decoration-none text-muted">学习路径</a></li>
+                        <li><a href="resources.html" class="text-decoration-none text-muted">资源中心</a></li>
+                        <li><a href="about.html" class="text-decoration-none text-muted">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>联系我们</h5>
+                    <ul class="list-unstyled text-muted">
+                        <!-- <li><i class="bi bi-envelope me-2"></i></li> -->
+                        <li><i class="bi bi-github me-2"></i>GitHub: HeXavi8</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="text-center text-muted">
+                <small>这只是一个 Demo</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

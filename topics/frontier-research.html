@@ -1,0 +1,1865 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前沿研究 - 具身智能学习路径</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 字体 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- 图标 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">具身智能学习路径</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">首页</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="learningPathDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            学习路径
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="learningPathDropdown">
+                            <li><a class="dropdown-item" href="../learning-path/beginner.html">入门阶段</a></li>
+                            <li><a class="dropdown-item" href="../learning-path/intermediate.html">进阶阶段</a></li>
+                            <li><a class="dropdown-item" href="../learning-path/professional.html">专业阶段</a></li>
+                            <li><a class="dropdown-item" href="../learning-path/expert.html">专家阶段</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="topicsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            主题探索
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="topicsDropdown">
+                            <li><a class="dropdown-item" href="basic-concepts.html">基础概念</a></li>
+                            <li><a class="dropdown-item" href="core-technologies.html">核心技术</a></li>
+                            <li><a class="dropdown-item" href="system-design.html">系统设计</a></li>
+                            <li><a class="dropdown-item" href="application-areas.html">应用领域</a></li>
+                            <li><a class="dropdown-item active" href="frontier-research.html">前沿研究</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../resources.html">资源中心</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../projects.html">项目实践</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">关于</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <!-- <input class="form-control me-2" type="search" placeholder="搜索" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">搜索</button> -->
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面标题 -->
+    <div class="bg-primary text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1>具身智能前沿研究</h1>
+                    <p class="lead mb-0">探索具身智能领域最新研究方向、突破性进展与未来发展趋势</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <button class="btn btn-outline-light" id="save-topic">
+                        <i class="bi bi-bookmark-plus me-1"></i> 收藏主题
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主要内容 -->
+    <div class="container py-5">
+        <div class="row">
+            <!-- 左侧内容 -->
+            <div class="col-lg-8">
+                <!-- 研究概述 -->
+                <section class="mb-5" id="section-overview">
+                    <h2 class="border-bottom pb-2 mb-4">前沿研究概述</h2>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p class="lead">具身智能研究正处于快速发展阶段，多个研究方向的突破正在重塑我们对智能的理解和构建方式。</p>
+
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <h3 class="h5">研究趋势</h3>
+                                    <ul>
+                                        <li><strong>多模态感知与交互</strong>：整合视觉、触觉、听觉等多种感知</li>
+                                        <li><strong>自主学习与适应</strong>：从经验中持续学习和适应环境</li>
+                                        <li><strong>人机协作与共生</strong>：增强人类能力而非替代</li>
+                                        <li><strong>生物启发设计</strong>：从生物系统中获取灵感</li>
+                                        <li><strong>社会智能</strong>：理解和参与社会交互</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="h5">研究挑战</h3>
+                                    <ul>
+                                        <li><strong>样本效率</strong>：减少学习所需的数据量</li>
+                                        <li><strong>泛化能力</strong>：适应新环境和任务</li>
+                                        <li><strong>物理交互</strong>：精确操作和交互</li>
+                                        <li><strong>长期自主性</strong>：持续稳定运行</li>
+                                        <li><strong>可解释性</strong>：理解和解释系统行为</li>
+                                        <li><strong>伦理与安全</strong>：确保系统行为符合伦理和安全标准</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="card bg-light mb-4">
+                                <div class="card-body">
+                                    <h3 class="h5">研究领域分布</h3>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h4 class="h6">技术导向研究</h4>
+                                            <ul>
+                                                <li>感知与表示学习</li>
+                                                <li>运动控制与规划</li>
+                                                <li>学习算法与架构</li>
+                                                <li>人机交互与接口</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h4 class="h6">应用导向研究</h4>
+                                            <ul>
+                                                <li>医疗与康复机器人</li>
+                                                <li>工业与服务机器人</li>
+                                                <li>社交与教育机器人</li>
+                                                <li>极端环境机器人</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <blockquote
+                                class="blockquote bg-primary bg-opacity-10 p-3 border-start border-primary border-3">
+                                <p class="mb-0">"具身智能研究的最终目标不仅是创造能够在物理世界中行动的智能体，而是理解智能本身如何从身体与环境的交互中涌现。"</p>
+                                <footer class="blockquote-footer mt-2">Rolf Pfeifer，《How the Body Shapes the Way We
+                                    Think》作者</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 多模态感知与表示 -->
+                <section class="mb-5" id="section-multimodal">
+                    <h2 class="border-bottom pb-2 mb-4">多模态感知与表示</h2>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p class="lead">多模态感知与表示研究致力于整合视觉、触觉、听觉等多种感知模态，构建丰富的环境和任务表示。</p>
+
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <h3 class="h5">研究方向</h3>
+                                    <div class="accordion" id="multimodalAccordion">
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    视触觉融合
+                                                </button>
+                                            </h4>
+                                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                                aria-labelledby="headingOne" data-bs-parent="#multimodalAccordion">
+                                                <div class="accordion-body">
+                                                    <p>视触觉融合研究将视觉和触觉信息结合，增强物体识别和操作能力：</p>
+                                                    <ul>
+                                                        <li><strong>触觉增强视觉</strong>：利用触觉信息补充视觉遮挡或模糊区域</li>
+                                                        <li><strong>视觉引导触觉</strong>：利用视觉信息指导触觉探索</li>
+                                                        <li><strong>跨模态表示学习</strong>：学习视觉和触觉的共享表示</li>
+                                                        <li><strong>物理属性感知</strong>：结合视触觉推断物体硬度、纹理等属性</li>
+                                                    </ul>
+                                                    <p><strong>代表性研究</strong>：MIT的GelSight触觉传感器与视觉系统结合，实现精细物体操作</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    多感官表示学习
+                                                </button>
+                                            </h4>
+                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="headingTwo" data-bs-parent="#multimodalAccordion">
+                                                <div class="accordion-body">
+                                                    <p>多感官表示学习研究如何从多种感知模态中学习统一的环境表示：</p>
+                                                    <ul>
+                                                        <li><strong>自监督多模态学习</strong>：无需标注数据学习跨模态关联</li>
+                                                        <li><strong>模态对齐</strong>：将不同模态的信息映射到共享空间</li>
+                                                        <li><strong>模态缺失处理</strong>：在部分模态缺失情况下保持表示稳定</li>
+                                                        <li><strong>层次化表示</strong>：从低级特征到高级语义的多层次表示</li>
+                                                    </ul>
+                                                    <p><strong>代表性研究</strong>：DeepMind的Multi-Modal
+                                                        Transformer模型，整合视觉、语言和动作表示</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    主动感知
+                                                </button>
+                                            </h4>
+                                            <div id="collapseThree" class="accordion-collapse collapse"
+                                                aria-labelledby="headingThree" data-bs-parent="#multimodalAccordion">
+                                                <div class="accordion-body">
+                                                    <p>主动感知研究智能体如何主动探索环境以获取最有价值的感知信息：</p>
+                                                    <ul>
+                                                        <li><strong>注意力机制</strong>：选择性关注重要信息</li>
+                                                        <li><strong>探索策略</strong>：优化感知动作序列</li>
+                                                        <li><strong>信息获取规划</strong>：基于不确定性引导探索</li>
+                                                        <li><strong>好奇心驱动学习</strong>：寻求新颖和信息丰富的体验</li>
+                                                    </ul>
+                                                    <p><strong>代表性研究</strong>：UC Berkeley的Active Touch
+                                                        Laboratory研究触觉主动探索策略</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="h5">关键技术与方法</h3>
+                                    <div class="card mb-3">
+                                        <div class="card-header bg-primary text-white">
+                                            <h4 class="h6 mb-0">传感器技术</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><strong>高分辨率触觉传感器</strong>：如GelSight、DIGIT等</li>
+                                                <li><strong>多光谱视觉</strong>：结合RGB、深度、热成像等</li>
+                                                <li><strong>空间音频</strong>：方向性声音感知</li>
+                                                <li><strong>分布式传感网络</strong>：全身覆盖的传感器阵列</li>
+                                                <li><strong>事件相机</strong>：高时间分辨率视觉感知</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header bg-success text-white">
+                                            <h4 class="h6 mb-0">算法与模型</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><strong>多模态Transformer</strong>：处理不同模态序列</li>
+                                                <li><strong>跨模态对比学习</strong>：学习模态间关联</li>
+                                                <li><strong>图神经网络</strong>：建模传感器间关系</li>
+                                                <li><strong>贝叶斯感知模型</strong>：处理感知不确定性</li>
+                                                <li><strong>神经隐式表示</strong>：连续场景表示</li>
+                                                <li><strong>注意力机制</strong>：选择性处理感知信息</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="h5 mb-3">前沿研究案例</h3>
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-primary">
+                                        <div class="card-header bg-primary text-white">
+                                            <h4 class="card-title h6 mb-0">MIT CSAIL: VisuoTactile</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>VisuoTactile是一个视触觉融合系统，用于精细物体操作。</p>
+                                            <h5 class="h6">研究亮点：</h5>
+                                            <ul>
+                                                <li>高分辨率触觉传感器与视觉系统结合</li>
+                                                <li>自监督跨模态表示学习</li>
+                                                <li>预测性触觉模型，预测接触结果</li>
+                                                <li>闭环控制系统，实时调整操作策略</li>
+                                            </ul>
+                                            <h5 class="h6">研究成果：</h5>
+                                            <ul>
+                                                <li>实现95%成功率的精细物体抓取</li>
+                                                <li>能够处理透明、反光等视觉挑战物体</li>
+                                                <li>减少50%的力控制误差</li>
+                                                <li>发表于Science Robotics期刊</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-success">
+                                        <div class="card-header bg-success text-white">
+                                            <h4 class="card-title h6 mb-0">Stanford: SensoryGPT</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>SensoryGPT是一个多模态大型语言模型，整合视觉、触觉、听觉和语言。</p>
+                                            <h5 class="h6">研究亮点：</h5>
+                                            <ul>
+                                                <li>统一的多模态编码器-解码器架构</li>
+                                                <li>大规模多模态预训练数据集</li>
+                                                <li>跨模态推理和生成能力</li>
+                                                <li>零样本迁移到新任务</li>
+                                            </ul>
+                                            <h5 class="h6">研究成果：</h5>
+                                            <ul>
+                                                <li>在多模态理解基准上超越专用模型</li>
+                                                <li>能够从一种模态生成另一种模态的预测</li>
+                                                <li>支持自然语言交互的感知查询</li>
+                                                <li>发表于NeurIPS会议</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-info">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="bi bi-lightbulb-fill fs-4"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h4 class="h5">未来研究方向</h4>
+                                        <p>多模态感知与表示研究的未来发展趋势：</p>
+                                        <ul class="mb-0">
+                                            <li><strong>生物启发感知系统</strong>：模仿人类多感官整合机制</li>
+                                            <li><strong>自组织感知表示</strong>：无需人工设计的表示学习</li>
+                                            <li><strong>情境感知表示</strong>：根据任务和环境调整表示</li>
+                                            <li><strong>跨模态因果推理</strong>：理解模态间的因果关系</li>
+                                            <li><strong>低资源多模态学习</strong>：减少数据和计算需求</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 自主学习与适应 -->
+                <section class="mb-5" id="section-learning">
+                    <h2 class="border-bottom pb-2 mb-4">自主学习与适应</h2>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p class="lead">自主学习与适应研究探索如何使具身智能系统能够从经验中持续学习，并适应新环境和任务。</p>
+
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <h3 class="h5">研究方向</h3>
+                                    <div class="accordion" id="learningAccordion">
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingFour">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseFour" aria-expanded="true"
+                                                    aria-controls="collapseFour">
+                                                    少样本学习与元学习
+                                                </button>
+                                            </h4>
+                                            <div id="collapseFour" class="accordion-collapse collapse show"
+                                                aria-labelledby="headingFour" data-bs-parent="#learningAccordion">
+                                                <div class="accordion-body">
+                                                    <p>少样本学习与元学习研究如何从少量经验中快速学习新任务：</p>
+                                                    <ul>
+                                                        <li><strong>元强化学习</strong>：学习如何学习新任务的策略</li>
+                                                        <li><strong>快速适应算法</strong>：几次尝试内适应新任务</li>
+                                                        <li><strong>任务表示学习</strong>：学习任务的结构化表示</li>
+                                                        <li><strong>先验知识迁移</strong>：利用已有知识加速学习</li>
+                                                    </ul>
+                                                    <p><strong>代表性研究</strong>：UC Berkeley的MAML (Model-Agnostic
+                                                        Meta-Learning)算法</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingFive">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                                    aria-expanded="false" aria-controls="collapseFive">
+                                                    模仿学习与示范
+                                                </button>
+                                            </h4>
+                                            <div id="collapseFive" class="accordion-collapse collapse"
+                                                aria-labelledby="headingFive" data-bs-parent="#learningAccordion">
+                                                <div class="accordion-body">
+                                                    <p>模仿学习研究如何从人类或其他智能体的示范中学习技能：</p>
+                                                    <ul>
+                                                        <li><strong>行为克隆</strong>：直接复制示范行为</li>
+                                                        <li><strong>逆强化学习</strong>：推断示范背后的奖励函数</li>
+                                                        <li><strong>多模态示范学习</strong>：从视频、语言等多种形式学习</li>
+                                                        <li><strong>交互式模仿学习</strong>：在学习过程中获取反馈</li>
+                                                    </ul>
+                                                    <p><strong>代表性研究</strong>：Stanford的DAGGER (Dataset
+                                                        Aggregation)算法和RoboTurk平台</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingSix">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                                    aria-expanded="false" aria-controls="collapseSix">
+                                                    自监督与无监督学习
+                                                </button>
+                                            </h4>
+                                            <div id="collapseSix" class="accordion-collapse collapse"
+                                                aria-labelledby="headingSix" data-bs-parent="#learningAccordion">
+                                                <div class="accordion-body">
+                                                    <p>自监督学习研究如何从未标注数据中学习有用表示和技能：</p>
+                                                    <ul>
+                                                        <li><strong>预测学习</strong>：预测未来状态或感知</li>
+                                                        <li><strong>对比学习</strong>：区分相关和不相关经验</li>
+                                                        <li><strong>好奇心驱动探索</strong>：寻求预测误差高的经验</li>
+                                                        <li><strong>技能发现</strong>：自动发现和学习基本技能</li>
+                                                    </ul>
+                                                    <p><strong>代表性研究</strong>：DeepMind的Contrastive Predictive
+                                                        Coding和UCL的DADS (Dynamics-Aware Discovery of Skills)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="h5">关键技术与方法</h3>
+                                    <div class="card mb-3">
+                                        <div class="card-header bg-primary text-white">
+                                            <h4 class="h6 mb-0">学习算法</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><strong>元强化学习</strong>：MAML, Reptile, ProMP</li>
+                                                <li><strong>对比学习</strong>：SimCLR, MoCo, BYOL</li>
+                                                <li><strong>生成模型</strong>：VAE, GAN, Diffusion Models</li>
+                                                <li><strong>层次化强化学习</strong>：HAC, HIRO, Option-Critic</li>
+                                                <li><strong>多任务学习</strong>：Soft Parameter Sharing, PCGrad</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header bg-success text-white">
+                                            <h4 class="h6 mb-0">学习框架</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><strong>仿真到现实迁移</strong>：Domain Randomization, CycleGAN</li>
+                                                <li><strong>课程学习</strong>：渐进式难度增加</li>
+                                                <li><strong>人机协作学习</strong>：TAMER, COACH, DAgger</li>
+                                                <li><strong>多智能体学习</strong>：MADDPG, QMIX, MAPPO</li>
+                                                <li><strong>终身学习</strong>：EWC, Progressive Networks, PackNet</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="h5 mb-3">前沿研究案例</h3>
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-primary">
+                                        <div class="card-header bg-primary text-white">
+                                            <h4 class="card-title h6 mb-0">Google Research: RT-1</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>RT-1 (Robotic Transformer)是一个基于Transformer的机器人控制模型，能从多样化数据中学习通用机器人技能。</p>
+                                            <h5 class="h6">研究亮点：</h5>
+                                            <ul>
+                                                <li>大规模机器人数据集，包含130K示范</li>
+                                                <li>多任务、多机器人学习架构</li>
+                                                <li>语言条件控制，支持自然语言指令</li>
+                                                <li>实时视觉-动作映射</li>
+                                            </ul>
+                                            <h5 class="h6">研究成果：</h5>
+                                            <ul>
+                                                <li>在700多个新任务上实现90%成功率</li>
+                                                <li>能够泛化到新物体和环境</li>
+                                                <li>支持长序列任务执行</li>
+                                                <li>发表于CoRL会议并开源</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-success">
+                                        <div class="card-header bg-success text-white">
+                                            <h4 class="card-title h6 mb-0">FAIR: DINO</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>DINO (Self-Distillation with No Labels)是一个自监督视觉表示学习框架，为机器人提供强大的视觉理解能力。
+                                            </p>
+                                            <h5 class="h6">研究亮点：</h5>
+                                            <ul>
+                                                <li>无需标注数据的自监督学习</li>
+                                                <li>基于知识蒸馏的训练方法</li>
+                                                <li>涌现的物体分割能力</li>
+                                                <li>与ViT架构结合的高性能表示</li>
+                                            </ul>
+                                            <h5 class="h6">研究成果：</h5>
+                                            <ul>
+                                                <li>在多个视觉任务上超越监督学习</li>
+                                                <li>机器人场景理解能力显著提升</li>
+                                                <li>减少80%的标注数据需求</li>
+                                                <li>发表于ICCV会议并广泛应用</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-info">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="bi bi-lightbulb-fill fs-4"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h4 class="h5">未来研究方向</h4>
+                                        <p>自主学习与适应研究的未来发展趋势：</p>
+                                        <ul class="mb-0">
+                                            <li><strong>基础模型</strong>：大规模预训练的机器人基础模型</li>
+                                            <li><strong>开放世界学习</strong>：持续适应未知环境和任务</li>
+                                            <li><strong>社会学习</strong>：从其他智能体和人类社会中学习</li>
+                                            <li><strong>内省学习</strong>：反思和改进自身学习过程</li>
+                                            <li><strong>混合学习系统</strong>：结合符号推理和神经学习</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 人机协作与共生 -->
+                <section class="mb-5" id="section-collaboration">
+                    <h2 class="border-bottom pb-2 mb-4">人机协作与共生</h2>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p class="lead">人机协作与共生研究探索如何设计具身智能系统与人类有效协作，形成互补关系而非替代关系。</p>
+
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <h3 class="h5">研究方向</h3>
+                                    <div class="accordion" id="collaborationAccordion">
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingSeven">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseSeven" aria-expanded="true"
+                                                    aria-controls="collapseSeven">
+                                                    共享自主权
+                                                </button>
+                                            </h4>
+                                            <div id="collapseSeven" class="accordion-collapse collapse show"
+                                                aria-labelledby="headingSeven" data-bs-parent="#collaborationAccordion">
+                                                <div class="accordion-body">
+                                                    <p>共享自主权研究人类和机器人如何动态分配控制权和决策权：</p>
+                                                    <ul>
+                                                        <li><strong>自适应自主性</strong>：根据情境调整自主程度</li>
+                                                        <li><strong>混合主动性</strong>：人机共同发起行动</li>
+                                                        <li><strong>可调节自主性</strong>：用户控制自主程度</li>
+                                                        <li><strong>情境感知切换</strong>：智能切换控制模式</li>
+                                                    </ul>
+                                                    <p><strong>代表性研究</strong>：MIT的Conductors and Players框架，动态分配任务控制权</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingEight">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseEight"
+                                                    aria-expanded="false" aria-controls="collapseEight">
+                                                    意图理解与预测
+                                                </button>
+                                            </h4>
+                                            <div id="collapseEight" class="accordion-collapse collapse"
+                                                aria-labelledby="headingEight" data-bs-parent="#collaborationAccordion">
+                                                <div class="accordion-body">
+                                                    <p>意图理解研究如何理解和预测人类意图，实现自然协作：</p>
+                                                    <ul>
+                                                        <li><strong>多模态意图识别</strong>：从语言、姿势、视线等推断意图</li>
+                                                        <li><strong>预测性协助</strong>：预测并提前准备协助行为</li>
+                                                        <li><strong>心智模型构建</strong>：建立对合作者的内部模型</li>
+                                                        <li><strong>情境化理解</strong>：考虑环境和任务背景</li>
+                                                    </ul>
+                                                    <p><strong>代表性研究</strong>：Stanford的Watch-And-Help框架，预测人类需求并提供协助</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingNine">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseNine"
+                                                    aria-expanded="false" aria-controls="collapseNine">
+                                                    可解释性与信任
+                                                </button>
+                                            </h4>
+                                            <div id="collapseNine" class="accordion-collapse collapse"
+                                                aria-labelledby="headingNine" data-bs-parent="#collaborationAccordion">
+                                                <div class="accordion-body">
+                                                    <p>可解释性研究如何使机器人行为透明化，建立人类信任：</p>
+                                                    <ul>
+                                                        <li><strong>行为解释生成</strong>：提供决策理由</li>
+                                                        <li><strong>可预测性设计</strong>：使行为符合人类预期</li>
+                                                        <li><strong>不确定性表达</strong>：传达系统的信心水平</li>
+                                                        <li><strong>失败恢复与沟通</strong>：优雅处理错误</li>
+                                                    </ul>
+                                                    <p><strong>代表性研究</strong>：CMU的Explicable Robot Planning，生成人类可理解的行为
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="h5">关键技术与方法</h3>
+                                    <div class="card mb-3">
+                                        <div class="card-header bg-primary text-white">
+                                            <h4 class="h6 mb-0">交互技术</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><strong>多模态交互界面</strong>：语音、手势、触摸结合</li>
+                                                <li><strong>增强现实协作</strong>：共享视觉空间</li>
+                                                <li><strong>触觉反馈</strong>：力反馈和触觉通信</li>
+                                                <li><strong>自适应用户界面</strong>：根据用户调整交互方式</li>
+                                                <li><strong>情感计算</strong>：识别和回应人类情绪</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header bg-success text-white">
+                                            <h4 class="h6 mb-0">协作框架</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><strong>共享控制架构</strong>：人机共享控制权</li>
+                                                <li><strong>协作规划算法</strong>：考虑人类行为的规划</li>
+                                                <li><strong>互动学习系统</strong>：从交互中学习偏好</li>
+                                                <li><strong>团队认知模型</strong>：建模团队知识和协调</li>
+                                                <li><strong>人因工程设计</strong>：考虑人类因素的系统设计</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="h5 mb-3">前沿研究案例</h3>
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-primary">
+                                        <div class="card-header bg-primary text-white">
+                                            <h4 class="card-title h6 mb-0">CMU: HARMONIC</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>HARMONIC是一个人机协作框架，使机器人能够适应人类行为并提供恰当协助。</p>
+                                            <h5 class="h6">研究亮点：</h5>
+                                            <ul>
+                                                <li>自适应协作策略，根据人类行为调整</li>
+                                                <li>基于不确定性的主动请求帮助</li>
+                                                <li>混合主动性模型，平衡人机主动性</li>
+                                                <li>任务结构学习，理解协作任务模式</li>
+                                            </ul>
+                                            <h5 class="h6">研究成果：</h5>
+                                            <ul>
+                                                <li>协作效率提升40%</li>
+                                                <li>用户满意度显著提高</li>
+                                                <li>减少70%的沟通需求</li>
+                                                <li>发表于HRI会议并获最佳论文奖</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-success">
+                                        <div class="card-header bg-success text-white">
+                                            <h4 class="card-title h6 mb-0">UC Berkeley: BEHAVIOR</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>BEHAVIOR是一个家庭环境中的人机协作系统，专注于日常活动辅助。</p>
+                                            <h5 class="h6">研究亮点：</h5>
+                                            <ul>
+                                                <li>情境感知协助，理解家庭活动</li>
+                                                <li>多级别自主性，从监督到完全自主</li>
+                                                <li>可解释行为生成，提供行动理由</li>
+                                                <li>长期适应，学习用户偏好和习惯</li>
+                                            </ul>
+                                            <h5 class="h6">研究成果：</h5>
+                                            <ul>
+                                                <li>成功完成100+家庭任务</li>
+                                                <li>长期用户研究显示高接受度</li>
+                                                <li>老年用户独立生活能力提升</li>
+                                                <li>发表于Science Robotics期刊</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-info">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="bi bi-lightbulb-fill fs-4"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h4 class="h5">未来研究方向</h4>
+                                        <p>人机协作与共生研究的未来发展趋势：</p>
+                                        <ul class="mb-0">
+                                            <li><strong>长期人机关系</strong>：建立持久的协作关系</li>
+                                            <li><strong>文化适应协作</strong>：适应不同文化背景的协作方式</li>
+                                            <li><strong>群体协作</strong>：多人多机器人协作系统</li>
+                                            <li><strong>情感智能协作</strong>：考虑情感因素的协作</li>
+                                            <li><strong>协作学习</strong>：人机共同学习和技能提升</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 社会智能与交互 -->
+                <section class="mb-5" id="section-social">
+                    <h2 class="border-bottom pb-2 mb-4">社会智能与交互</h2>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p class="lead">社会智能与交互研究探索如何使具身智能系统能够理解社会规范，参与自然社会交互，并建立有意义的人机关系。</p>
+
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <h3 class="h5">研究方向</h3>
+                                    <div class="accordion" id="socialAccordion">
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingTen">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseTen" aria-expanded="true"
+                                                    aria-controls="collapseTen">
+                                                    社会感知与理解
+                                                </button>
+                                            </h4>
+                                            <div id="collapseTen" class="accordion-collapse collapse show"
+                                                aria-labelledby="headingTen" data-bs-parent="#socialAccordion">
+                                                <div class="accordion-body">
+                                                    <p>社会感知研究如何理解社会场景、人类行为和社会规范：</p>
+                                                    <ul>
+                                                        <li><strong>社会场景理解</strong>：识别社交情境和角色</li>
+                                                        <li><strong>情感识别</strong>：理解人类情绪和情感状态</li>
+                                                        <li><strong>社会关系推断</strong>：识别人际关系网络</li>
+                                                        <li><strong>社会规范学习</strong>：学习适当的行为规则</li>
+                                                    </ul>
+                                                    <p><strong>代表性研究</strong>：MIT的Social Navigation框架，理解人类社交空间</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingEleven">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseEleven"
+                                                    aria-expanded="false" aria-controls="collapseEleven">
+                                                    自然交互与表达
+                                                </button>
+                                            </h4>
+                                            <div id="collapseEleven" class="accordion-collapse collapse"
+                                                aria-labelledby="headingEleven" data-bs-parent="#socialAccordion">
+                                                <div class="accordion-body">
+                                                    <p>自然交互研究如何实现直观、自然的人机交互方式：</p>
+                                                    <ul>
+                                                        <li><strong>多模态对话</strong>：结合语言、手势、表情的交流</li>
+                                                        <li><strong>非语言行为生成</strong>：产生适当的身体语言</li>
+                                                        <li><strong>情感表达</strong>：传达情感状态</li>
+                                                        <li><strong>交互节奏与同步</strong>：协调交互时机</li>
+                                                    </ul>
+                                                    <p><strong>代表性研究</strong>：日本ATR实验室的ERICA机器人，实现自然对话和非语言行为</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingTwelve">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwelve"
+                                                    aria-expanded="false" aria-controls="collapseTwelve">
+                                                    长期社会关系
+                                                </button>
+                                            </h4>
+                                            <div id="collapseTwelve" class="accordion-collapse collapse"
+                                                aria-labelledby="headingTwelve" data-bs-parent="#socialAccordion">
+                                                <div class="accordion-body">
+                                                    <p>长期社会关系研究如何建立和维持持久的人机关系：</p>
+                                                    <ul>
+                                                        <li><strong>个性化交互</strong>：适应特定用户的偏好</li>
+                                                        <li><strong>关系记忆</strong>：记住过去交互和共享经历</li>
+                                                        <li><strong>社会角色适应</strong>：根据关系调整行为</li>
+                                                        <li><strong>信任建立</strong>：通过一致性和可靠性建立信任</li>
+                                                    </ul>
+                                                    <p><strong>代表性研究</strong>：Yale的Social Robots实验室，研究长期人机关系发展</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="h5">关键技术与方法</h3>
+                                    <div class="card mb-3">
+                                        <div class="card-header bg-primary text-white">
+                                            <h4 class="h6 mb-0">社会感知技术</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><strong>多人跟踪与识别</strong>：监测多人场景</li>
+                                                <li><strong>情感计算</strong>：情绪和情感识别</li>
+                                                <li><strong>社会信号处理</strong>：分析非语言线索</li>
+                                                <li><strong>意图与目标识别</strong>：理解人类动机</li>
+                                                <li><strong>社会场景理解</strong>：分析群体动态</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header bg-success text-white">
+                                            <h4 class="h6 mb-0">交互设计方法</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><strong>对话管理系统</strong>：自然对话流程</li>
+                                                <li><strong>行为生成模型</strong>：产生自然行为</li>
+                                                <li><strong>情感表达设计</strong>：传达情感状态</li>
+                                                <li><strong>个性化交互框架</strong>：适应用户特点</li>
+                                                <li><strong>社会评估方法</strong>：评估交互质量</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="h5 mb-3">前沿研究案例</h3>
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-primary">
+                                        <div class="card-header bg-primary text-white">
+                                            <h4 class="card-title h6 mb-0">MIT Media Lab: JIBO</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>JIBO是一个社交机器人研究平台，专注于自然社会交互和长期关系建立。</p>
+                                            <h5 class="h6">研究亮点：</h5>
+                                            <ul>
+                                                <li>表现力动作设计，传达情感和意图</li>
+                                                <li>个性化交互记忆，记住用户偏好</li>
+                                                <li>社会存在感设计，创造陪伴感</li>
+                                                <li>长期用户研究，跟踪关系发展</li>
+                                            </ul>
+                                            <h5 class="h6">研究成果：</h5>
+                                            <ul>
+                                                <li>用户与机器人建立情感连接</li>
+                                                <li>长期使用满意度保持稳定</li>
+                                                <li>社交互动自然度高评价</li>
+                                                <li>多篇HRI会议论文和专利</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card h-100 border-success">
+                                        <div class="card-header bg-success text-white">
+                                            <h4 class="card-title h6 mb-0">USC: MACH</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>MACH (My Automated Conversation coacH)是一个社交技能训练系统，提供实时社交反馈。</p>
+                                            <h5 class="h6">研究亮点：</h5>
+                                            <ul>
+                                                <li>实时社交信号分析，包括语音、表情、姿势</li>
+                                                <li>个性化反馈生成，针对用户社交行为</li>
+                                                <li>虚拟角色设计，创造真实交互体验</li>
+                                                <li>渐进式社交训练，从简单到复杂场景</li>
+                                            </ul>
+                                            <h5 class="h6">研究成果：</h5>
+                                            <ul>
+                                                <li>用户社交技能显著提升</li>
+                                                <li>面试表现改善30%</li>
+                                                <li>社交焦虑减轻</li>
+                                                <li>发表于PNAS期刊并获多项奖项</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-info">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="bi bi-lightbulb-fill fs-4"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h4 class="h5">未来研究方向</h4>
+                                        <p>社会智能与交互研究的未来发展趋势：</p>
+                                        <ul class="mb-0">
+                                            <li><strong>文化适应社交智能</strong>：适应不同文化背景</li>
+                                            <li><strong>群体交互</strong>：参与多人社交场景</li>
+                                            <li><strong>社会学习</strong>：从社交经验中学习</li>
+                                            <li><strong>社会影响理解</strong>：理解机器人的社会影响</li>
+                                            <li><strong>伦理社交设计</strong>：考虑社交伦理问题</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 未来研究展望 -->
+                <section class="mb-5" id="section-future">
+                    <h2 class="border-bottom pb-2 mb-4">未来研究展望</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="lead">具身智能研究正朝着更加综合、自主和社会化的方向发展，未来将出现多个突破性研究方向。</p>
+
+                            <div class="row mb-4">
+                                <div class="col-lg-4 col-md-6 mb-3">
+                                    <div class="card h-100 border-primary">
+                                        <div class="card-header bg-primary text-white">
+                                            <h3 class="card-title h5 mb-0">通用具身智能</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>研究能够适应多种环境和任务的通用具身智能系统：</p>
+                                            <ul>
+                                                <li><strong>基础模型</strong>：大规模预训练的具身智能模型</li>
+                                                <li><strong>跨域泛化</strong>：跨环境和任务的知识迁移</li>
+                                                <li><strong>持续学习</strong>：终身学习和适应能力</li>
+                                                <li><strong>模块化架构</strong>：可组合的技能和知识</li>
+                                            </ul>
+                                            <p><strong>潜在突破</strong>：能够快速适应新任务的通用机器人助手</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-3">
+                                    <div class="card h-100 border-success">
+                                        <div class="card-header bg-success text-white">
+                                            <h3 class="card-title h5 mb-0">物理智能</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>研究物理交互和操作的深层理解与控制：</p>
+                                            <ul>
+                                                <li><strong>物理常识推理</strong>：理解物理规律和属性</li>
+                                                <li><strong>精细操作控制</strong>：灵巧操作复杂物体</li>
+                                                <li><strong>工具使用与创造</strong>：理解和创造工具</li>
+                                                <li><strong>物理问题解决</strong>：解决物理约束问题</li>
+                                            </ul>
+                                            <p><strong>潜在突破</strong>：能够像人类工匠一样操作物体的机器人系统</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-3">
+                                    <div class="card h-100 border-info">
+                                        <div class="card-header bg-info text-white">
+                                            <h3 class="card-title h5 mb-0">发展机器人学</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>研究智能体如何通过发展阶段逐步获取能力：</p>
+                                            <ul>
+                                                <li><strong>认知发展模型</strong>：模拟人类认知发展</li>
+                                                <li><strong>课程学习</strong>：渐进式学习复杂技能</li>
+                                                <li><strong>内驱力机制</strong>：自主探索和学习动机</li>
+                                                <li><strong>能力涌现</strong>：简单能力组合产生复杂行为</li>
+                                            </ul>
+                                            <p><strong>潜在突破</strong>：能够像儿童一样学习和发展的机器人系统</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-3">
+                                    <div class="card h-100 border-warning">
+                                        <div class="card-header bg-warning text-dark">
+                                            <h3 class="card-title h5 mb-0">集体智能</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>研究多个具身智能体如何协作形成更高级智能：</p>
+                                            <ul>
+                                                <li><strong>群体协作</strong>：多智能体协同完成任务</li>
+                                                <li><strong>分布式感知</strong>：共享和整合感知信息</li>
+                                                <li><strong>集体学习</strong>：知识和技能共享</li>
+                                                <li><strong>涌现行为</strong>：群体层面的复杂行为</li>
+                                            </ul>
+                                            <p><strong>潜在突破</strong>：能够协作解决复杂问题的机器人群体</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-3">
+                                    <div class="card h-100 border-danger">
+                                        <div class="card-header bg-danger text-white">
+                                            <h3 class="card-title h5 mb-0">混合智能系统</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>研究结合神经、符号和物理计算的混合智能：</p>
+                                            <ul>
+                                                <li><strong>神经-符号集成</strong>：结合学习和推理</li>
+                                                <li><strong>形态计算</strong>：利用物理结构进行计算</li>
+                                                <li><strong>生物启发计算</strong>：模仿生物信息处理</li>
+                                                <li><strong>量子-经典混合</strong>：结合量子和经典计算</li>
+                                            </ul>
+                                            <p><strong>潜在突破</strong>：结合多种计算范式的高效智能系统</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-3">
+                                    <div class="card h-100 border-secondary">
+                                        <div class="card-header bg-secondary text-white">
+                                            <h3 class="card-title h5 mb-0">自我意识与内省</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>研究具身智能体如何发展自我模型和内省能力：</p>
+                                            <ul>
+                                                <li><strong>身体自我模型</strong>：理解自身物理特性</li>
+                                                <li><strong>能力自我评估</strong>：评估自身能力和限制</li>
+                                                <li><strong>内省学习</strong>：反思和改进自身行为</li>
+                                                <li><strong>心理理论</strong>：理解自己和他人的心理状态</li>
+                                            </ul>
+                                            <p><strong>潜在突破</strong>：具有自我意识和反思能力的机器人系统</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-primary">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="bi bi-stars fs-4"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h4 class="h5">跨学科融合趋势</h4>
+                                        <p>具身智能研究将越来越依赖多学科融合：</p>
+                                        <ul class="mb-0">
+                                            <li><strong>认知科学 + 机器人学</strong>：理解和模拟认知过程</li>
+                                            <li><strong>神经科学 + 人工智能</strong>：脑启发学习和控制</li>
+                                            <li><strong>材料科学 + 传感器技术</strong>：新型柔性传感器</li>
+                                            <li><strong>社会心理学 + 人机交互</strong>：自然社会交互</li>
+                                            <li><strong>哲学 + 伦理学 + 工程学</strong>：负责任的智能系统设计</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <a href="../projects.html#frontier-projects" class="btn btn-primary">
+                                    <i class="bi bi-arrow-right-circle me-1"></i> 探索前沿研究项目
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- 右侧边栏 -->
+            <div class="col-lg-4">
+                <!-- 主题导航 -->
+                <div class="card mb-4 sticky-top" style="top: 80px; z-index: 999;">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="card-title h5 mb-0">主题导航</h3>
+                    </div>
+                    <div class="card-body">
+                        <nav class="nav flex-column">
+                            <a class="nav-link" href="#section-overview">前沿研究概述</a>
+                            <a class="nav-link" href="#section-multimodal">多模态感知与表示</a>
+                            <a class="nav-link" href="#section-learning">自主学习与适应</a>
+                            <a class="nav-link" href="#section-collaboration">人机协作与共生</a>
+                            <a class="nav-link" href="#section-social">社会智能与交互</a>
+                            <a class="nav-link" href="#section-future">未来研究展望</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- 研究热点 -->
+                <div class="card mb-4" id="hotspots">
+                    <div class="card-header bg-success text-white">
+                        <h3 class="card-title h5 mb-0">研究热点</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="flex-grow-1">
+                                <h4 class="h6 mb-0">多模态大型语言模型</h4>
+                                <div class="progress mt-1" style="height: 5px;">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 95%;"
+                                        aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="ms-2 text-danger fw-bold">95%</div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="flex-grow-1">
+                                <h4 class="h6 mb-0">基础机器人模型</h4>
+                                <div class="progress mt-1" style="height: 5px;">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 90%;"
+                                        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="ms-2 text-danger fw-bold">90%</div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="flex-grow-1">
+                                <h4 class="h6 mb-0">仿真到现实迁移</h4>
+                                <div class="progress mt-1" style="height: 5px;">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 85%;"
+                                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="ms-2 text-warning fw-bold">85%</div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="flex-grow-1">
+                                <h4 class="h6 mb-0">自监督机器人学习</h4>
+                                <div class="progress mt-1" style="height: 5px;">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;"
+                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="ms-2 text-warning fw-bold">80%</div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <h4 class="h6 mb-0">可解释AI机器人</h4>
+                                <div class="progress mt-1" style="height: 5px;">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 75%;"
+                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="ms-2 text-info fw-bold">75%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 顶尖研究机构 -->
+                <div class="card mb-4">
+                    <div class="card-header bg-info text-white">
+                        <h3 class="card-title h5 mb-0">顶尖研究机构</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group list-group-flush">
+                            <a href="https://www.csail.mit.edu/" target="_blank"
+                                class="list-group-item list-group-item-action d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-building fs-4 text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h4 class="h6 mb-0">MIT CSAIL</h4>
+                                    <p class="small text-muted mb-0">多模态感知、机器人操作、社会机器人</p>
+                                </div>
+                            </a>
+                            <a href="https://ai.stanford.edu/" target="_blank"
+                                class="list-group-item list-group-item-action d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-building fs-4 text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h4 class="h6 mb-0">Stanford AI Lab</h4>
+                                    <p class="small text-muted mb-0">机器人学习、视觉语言模型、人机交互</p>
+                                </div>
+                            </a>
+                            <a href="https://bair.berkeley.edu/" target="_blank"
+                                class="list-group-item list-group-item-action d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-building fs-4 text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h4 class="h6 mb-0">UC Berkeley BAIR</h4>
+                                    <p class="small text-muted mb-0">强化学习、机器人操作、自监督学习</p>
+                                </div>
+                            </a>
+                            <a href="https://www.deepmind.com/" target="_blank"
+                                class="list-group-item list-group-item-action d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-building fs-4 text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h4 class="h6 mb-0">DeepMind</h4>
+                                    <p class="small text-muted mb-0">通用AI、多智能体学习、机器人控制</p>
+                                </div>
+                            </a>
+                            <a href="https://research.google/" target="_blank"
+                                class="list-group-item list-group-item-action d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-building fs-4 text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h4 class="h6 mb-0">Google Research</h4>
+                                    <p class="small text-muted mb-0">机器人基础模型、语言条件控制、仿真</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 相关主题 -->
+                <div class="card mb-4">
+                    <div class="card-header bg-secondary text-white">
+                        <h3 class="card-title h5 mb-0">相关主题</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-grid gap-2">
+                            <a href="basic-concepts.html" class="btn btn-outline-primary">
+                                <i class="bi bi-book me-2"></i> 基础概念
+                            </a>
+                            <a href="core-technologies.html" class="btn btn-outline-primary">
+                                <i class="bi bi-cpu me-2"></i> 核心技术
+                            </a>
+                            <a href="system-design.html" class="btn btn-outline-primary">
+                                <i class="bi bi-diagram-3 me-2"></i> 系统设计
+                            </a>
+                            <a href="application-areas.html" class="btn btn-outline-primary">
+                                <i class="bi bi-gear me-2"></i> 应用领域
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 重要会议与期刊 -->
+                <div class="card">
+                    <div class="card-header bg-warning text-dark">
+                        <h3 class="card-title h5 mb-0">重要会议与期刊</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="h6">顶级会议</h4>
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                RSS (Robotics: Science and Systems)
+                                <span class="badge bg-primary rounded-pill">机器人</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                ICRA (IEEE Robotics and Automation)
+                                <span class="badge bg-primary rounded-pill">机器人</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                HRI (Human-Robot Interaction)
+                                <span class="badge bg-success rounded-pill">交互</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                CoRL (Conference on Robot Learning)
+                                <span class="badge bg-info rounded-pill">学习</span>
+                            </li>
+                        </ul>
+
+                        <h4 class="h6">顶级期刊</h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Science Robotics
+                                <span class="badge bg-danger rounded-pill">综合</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                IEEE T-RO (Transactions on Robotics)
+                                <span class="badge bg-primary rounded-pill">机器人</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                IJRR (Int'l Journal of Robotics Research)
+                                <span class="badge bg-primary rounded-pill">机器人</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>具身智能学习路径</h5>
+                    <p class="text-muted">从入门到专家的系统化学习指南</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>快速链接</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="text-decoration-none text-muted">首页</a></li>
+                        <li><a href="../learning-path/beginner.html" class="text-decoration-none text-muted">学习路径</a>
+                        </li>
+                        <li><a href="../resources.html" class="text-decoration-none text-muted">资源中心</a></li>
+                        <li><a href="../about.html" class="text-decoration-none text-muted">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>联系我们</h5>
+                    <ul class="list-unstyled text-muted">
+                        <!-- <li><i class="bi bi-envelope me-2"></i></li> -->
+                        <li><i class="bi bi-github me-2"></i>GitHub: HeXavi8</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="text-center text-muted">
+                <small>&copy; 2025 具身智能学习路径. 保留所有权利.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <footer-btn></footer-btn>
+    <script>
+        // 定义自定义元素
+        class FooterBtn extends HTMLElement {
+            constructor() {
+                super();
+                // 创建 Shadow DOM
+                const shadow = this.attachShadow({ mode: 'open' });
+                // 创建组件的HTML结构
+                const wrapper = document.createElement('div');
+                wrapper.setAttribute('class', 'wrapper');
+                // 添加一些内容到组件中
+                wrapper.innerHTML = `
+                <div class="page-footer">
+                    <div class="tooltip-dialog">Not an official Manus website nor endorsed by Manus. Content may contain inaccuracies; double-check before use. Do not submit passwords, credit cards, or personal information.</div>
+                    <div class="footer-close-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <g clip-path="url(#clip0_5850_97234)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.733398 8.00104C0.733398 3.98777 3.9868 0.734375 8.00006 0.734375C12.0133 0.734375 15.2667 3.98777 15.2667 8.00104C15.2667 12.0143 12.0133 15.2677 8.00006 15.2677C3.9868 15.2677 0.733398 12.0143 0.733398 8.00104Z" fill="white"/>
+                        <path d="M1.2334 8.00104C1.2334 4.26391 4.26294 1.23438 8.00006 1.23438C11.7372 1.23438 14.7667 4.26391 14.7667 8.00104C14.7667 11.7382 11.7372 14.7677 8.00006 14.7677C4.26294 14.7677 1.2334 11.7382 1.2334 8.00104Z" stroke="black" stroke-opacity="0.14" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.57576 5.57613C5.81007 5.34181 6.18997 5.34181 6.42429 5.57613L8.00002 7.15186L9.57576 5.57613C9.81007 5.34181 10.19 5.34181 10.4243 5.57613C10.6586 5.81044 10.6586 6.19034 10.4243 6.42465L8.84855 8.00039L10.4243 9.57613C10.6586 9.81044 10.6586 10.1903 10.4243 10.4247C10.19 10.659 9.81007 10.659 9.57576 10.4247L8.00002 8.84892L6.42429 10.4247C6.18997 10.659 5.81007 10.659 5.57576 10.4247C5.34145 10.1903 5.34145 9.81044 5.57576 9.57613L7.1515 8.00039L5.57576 6.42465C5.34145 6.19034 5.34145 5.81044 5.57576 5.57613Z" fill="#858481"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_5850_97234">
+                        <rect width="16" height="16" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    </div>
+                    <div class="footer-bg">
+                        <div class="tooltip-box">
+                            <div class="tooltip-desc">This user-generated website was created with AI. Use with caution.</div>
+                            <span
+                                class="tooltip-icon"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <g clip-path="url(#clip0_4345_83044)">
+                                        <path
+                                            d="M6 8V6M6 4H6.005M11 6C11 8.76142 8.76142 11 6 11C3.23858 11 1 8.76142 1 6C1 3.23858 3.23858 1 6 1C8.76142 1 11 3.23858 11 6Z"
+                                            stroke="#858481"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_4345_83044">
+                                            <rect width="12" height="12" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <a href="https://manus.im/invitation?from=space" target="_blank" class="footer-button">
+                        <span class="footer-logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path
+                                    d="M13.2251 16.9379C14.4717 16.147 15.3336 11.9052 15.144 10.6421C15.144 10.6421 14.9464 9.96396 14.4643 9.96394C13.9821 9.96391 13.7815 10.4719 13.7815 10.4719C13.7815 10.4719 13.6546 10.9409 13.4555 11.5313C13.1474 12.4447 13.0178 13.5718 12.2143 13.8571C11.4107 14.1425 10.6071 13.8725 10.6071 13.8725C11.1535 15.9448 11.9785 17.7288 13.2251 16.9379Z"
+                                    fill="white"
+                                />
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M7.04826 9.17689C6.59029 9.22824 6.34906 9.40136 6.26768 9.48274C5.94625 9.80417 5.78554 10.1256 5.78554 10.2863C5.78554 10.447 5.40745 9.53393 5.32437 9.44837C5.07703 9.19366 5.083 8.78667 5.33771 8.53933C5.69527 8.19212 6.28003 7.96925 6.90502 7.89918C7.55323 7.82651 8.3219 7.9075 9.09971 8.25205C10.0075 8.65415 10.4937 9.50199 10.6773 10.2768C10.7705 10.6701 10.7943 11.0743 10.7466 11.4426C10.7002 11.8002 10.5781 12.1826 10.3242 12.4736C9.79525 13.0799 9.01508 13.0116 8.593 12.9221C8.35518 12.8716 8.14542 12.7975 7.99786 12.738C7.92303 12.7079 7.86158 12.6804 7.81747 12.6597C7.79535 12.6493 7.77743 12.6406 7.7642 12.6341C7.75757 12.6308 7.75211 12.628 7.74786 12.6259L7.7424 12.6231L7.74037 12.622L7.73915 12.6214C7.73915 12.6214 7.7388 12.6212 8.03568 12.051L7.7388 12.6212C7.42389 12.4573 7.30152 12.069 7.46548 11.7541C7.62912 11.4398 8.01612 11.3173 8.3307 11.4798M8.3307 11.4798L8.33145 11.4802L8.3307 11.4798ZM8.3307 11.4798L8.33531 11.4822C8.34052 11.4847 8.3498 11.4893 8.36271 11.4953C8.38864 11.5075 8.42852 11.5254 8.4788 11.5457C8.58146 11.5871 8.71705 11.6341 8.85982 11.6644C9.19892 11.7363 9.32081 11.668 9.3554 11.6284C9.38325 11.5965 9.44396 11.4899 9.47154 11.2773C9.49771 11.0755 9.48663 10.8281 9.42625 10.5733C9.30267 10.0519 9.00685 9.61712 8.57899 9.42759C8.02117 9.1805 7.48301 9.12815 7.04826 9.17689"
+                                    fill="white"
+                                />
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M2.79812 2.53348C2.64176 2.85224 2.7734 3.2374 3.09216 3.39376C3.55 3.61834 3.94731 3.83979 4.34068 4.28331C4.57627 4.54892 4.98258 4.57326 5.2482 4.33767C5.51381 4.10208 5.53815 3.69577 5.30256 3.43016C4.742 2.79815 4.16499 2.48794 3.65839 2.23944C3.33963 2.08308 2.95448 2.21473 2.79812 2.53348Z"
+                                    fill="white"
+                                />
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M6.27275 0.662519C5.92831 0.748629 5.71889 1.09766 5.805 1.4421C5.86516 1.68274 5.92127 1.8885 5.97263 2.07686C6.07093 2.43738 6.15185 2.73415 6.21054 3.08969C6.26837 3.43999 6.59923 3.67708 6.94952 3.61926C7.29982 3.56143 7.53692 3.23058 7.47909 2.88028C7.40972 2.46006 7.3017 2.06246 7.19328 1.66338C7.14526 1.48666 7.09717 1.30966 7.05233 1.13027C6.96622 0.785827 6.61719 0.57641 6.27275 0.662519Z"
+                                    fill="white"
+                                />
+                                <path
+                                    d="M8.99979 3.21456C9.16051 2.57171 9.32122 2.08956 9.61377 1.60742"
+                                    stroke="white"
+                                    stroke-width="1.28571"
+                                    stroke-miterlimit="10"
+                                    stroke-linecap="round"
+                                />
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M11.3613 6.26832C12.6366 6.52316 12.6368 6.52221 12.6368 6.52221L12.637 6.52126L12.6373 6.51931L12.6381 6.51527L12.6396 6.50658C12.6407 6.50054 12.6418 6.49395 12.6429 6.48687C12.6452 6.47271 12.6476 6.45641 12.65 6.43816C12.6548 6.40191 12.6596 6.35662 12.6628 6.30419C12.6689 6.20315 12.6702 6.05635 12.6443 5.88608C12.5954 5.56354 12.4075 4.95215 11.7455 4.59774L11.6146 4.52762L11.4715 4.48801L11.1424 5.7144C11.4358 5.8715 11.3613 6.26832 11.3613 6.26832ZM11.1573 7.07742L11.3613 6.26832L12.6366 6.52316L12.6296 6.56049L12.4237 7.37732C12.3841 7.57807 12.3789 7.69285 12.381 7.75349C12.3828 7.80284 12.3892 7.81904 12.3924 7.82698L12.3927 7.8279C12.4008 7.84841 12.4216 7.89289 12.4977 8.00832C12.5287 8.05537 12.561 8.10252 12.6021 8.1626C12.613 8.1785 12.6245 8.19531 12.6367 8.21327C12.6919 8.29416 12.7565 8.38953 12.825 8.49621C13.2527 9.16281 13.2947 9.80259 13.2925 10.2126C13.2924 10.2186 13.2924 10.2246 13.2923 10.2305C13.3435 10.2481 13.3978 10.2658 13.4555 10.2841C13.4745 10.2902 13.4997 10.2982 13.5262 10.3065C13.5634 10.3183 13.6031 10.3308 13.6314 10.3399C13.6872 10.3577 13.7584 10.381 13.8272 10.4067C13.8751 10.4245 13.9211 10.4423 13.9644 10.4603C14.0059 10.4775 14.0566 10.4995 14.1099 10.5264C14.1513 10.5473 14.2186 10.5831 14.2948 10.6359L14.9647 10.9242L14.955 11.7823C14.9493 12.2868 14.7463 12.8187 14.6023 13.148C14.4436 13.5111 14.2339 13.8983 14.0408 14.1556C13.7712 14.515 13.4657 14.8945 13.0981 15.1372C12.8815 15.2802 12.6198 15.394 12.3111 15.4313C12.0361 15.4645 11.7981 15.4277 11.6232 15.3851L11.5717 15.3745C11.5199 15.3639 11.4456 15.3486 11.3553 15.3298C11.1748 15.2922 10.9287 15.2404 10.6678 15.1837C10.1867 15.0793 9.53471 14.9331 9.22715 14.8311L9.20492 14.8237L9.18296 14.8155C9.04655 14.7649 8.81591 14.7081 8.43387 14.621C8.41077 14.6157 8.38722 14.6103 8.36328 14.6049C8.03371 14.5299 7.6281 14.4376 7.24401 14.3212C6.8462 14.2008 6.35418 14.0216 5.9364 13.7296C5.4979 13.4232 4.99936 12.8829 4.9716 12.0723C4.96744 11.951 4.97023 11.8337 4.97774 11.7224C4.78027 11.5084 4.61454 11.2286 4.53078 10.8703C4.44918 10.5212 4.49431 10.2118 4.55156 9.99459C4.60897 9.7768 4.69617 9.58643 4.76904 9.44413C4.79364 9.3961 4.81915 9.34874 4.8446 9.30298C4.60356 9.22692 4.3313 9.13294 4.06631 9.01999C3.72023 8.87246 3.22918 8.62908 2.86258 8.2362C2.66514 8.0246 2.4584 7.72132 2.37481 7.3248C2.28733 6.90985 2.36002 6.51171 2.53036 6.1708C2.94502 5.34093 3.73706 5.04773 4.44152 5.02237C5.07762 4.99946 5.75449 5.17745 6.36097 5.39016C6.91355 5.58397 7.70443 5.94444 8.3763 6.25842C8.5976 5.89554 8.88932 5.48549 9.16548 5.15432L9.22034 5.08854L9.28382 5.03075C9.75896 4.59828 10.2927 4.45288 10.6994 4.42169C10.8988 4.4064 11.0705 4.41781 11.1989 4.43448C11.2638 4.44291 11.3198 4.45295 11.3652 4.46245C11.388 4.46721 11.4083 4.47188 11.426 4.4762C11.4349 4.47837 11.4431 4.48045 11.4507 4.48243L11.4616 4.48531L11.4666 4.48668L11.4691 4.48735L11.4703 4.48768C11.4703 4.48768 11.4715 4.48801 11.1424 5.7144C11.1424 5.7144 10.6292 5.57232 10.188 5.96175C10.1836 5.96567 10.1792 5.96965 10.1747 5.97368C10.161 5.99009 10.1473 6.0067 10.1336 6.02351C10.1139 6.04768 10.0941 6.07224 10.0743 6.09711C10.0685 6.10441 10.0627 6.11174 10.0569 6.1191C9.61666 6.67768 9.64277 6.91103 8.83914 7.87543C8.83914 7.87543 8.4205 7.68157 8.1701 7.56386C7.9983 7.48311 7.81669 7.39774 7.63164 7.31169C7.03464 7.03411 6.40173 6.74946 5.94628 6.58972C4.82494 6.19643 3.99821 6.14651 3.69645 6.75042C3.29839 7.54707 4.9148 8.00866 5.72705 8.24061C5.8981 8.28945 6.03349 8.32811 6.10689 8.35758C6.52348 8.52479 6.55255 8.86031 6.42848 9.16103C6.35609 9.33651 6.31482 9.43541 6.10706 9.64317C5.78563 9.9646 5.73292 10.3452 5.7943 10.6078C5.82503 10.7392 5.88582 10.8348 5.95809 10.9044C6.15197 11.0909 6.42842 11.0897 6.42842 11.0897C6.42842 11.0897 6.25016 11.5453 6.26759 12.0541C6.27143 12.1661 6.30155 12.268 6.35346 12.3612C6.66163 12.9145 7.73774 13.1596 8.64189 13.3655C9.02162 13.452 9.37102 13.5316 9.62046 13.6242C10.0676 13.7726 11.8925 14.1433 11.8925 14.1433C12.2292 14.2317 12.438 14.1247 12.9919 13.3864C13.2219 13.0797 13.653 12.2123 13.6583 11.7435C13.5884 11.7134 13.5835 11.7029 13.5786 11.6924C13.5718 11.6779 13.565 11.6633 13.3882 11.5974C13.329 11.5754 13.2499 11.5504 13.1593 11.5218C12.7822 11.4029 12.2071 11.2215 12.0534 10.929C11.9788 10.787 11.9846 10.5964 11.9915 10.3736C12.0022 10.0271 12.0153 9.60261 11.732 9.16115C11.6624 9.05276 11.5957 8.95523 11.5333 8.864C11.1781 8.34469 10.9626 8.0296 11.1573 7.07742ZM5.21736 8.64574C5.21818 8.64341 5.21787 8.64394 5.21684 8.64717L5.21736 8.64574ZM13.2859 10.6214C13.2859 10.6214 13.2859 10.6164 13.2849 10.6077C13.2852 10.6173 13.2859 10.6214 13.2859 10.6214Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </span>
+                        <div class="title">Made with Manus</div>
+                        <div class="create-title">Create my website</div>
+                    </a>
+                </div>
+
+                <div class="page-footer-mobile">
+                    <div class="footer-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path
+                                d="M13.2251 16.9379C14.4717 16.147 15.3336 11.9052 15.144 10.6421C15.144 10.6421 14.9464 9.96396 14.4643 9.96394C13.9821 9.96391 13.7815 10.4719 13.7815 10.4719C13.7815 10.4719 13.6546 10.9409 13.4555 11.5313C13.1474 12.4447 13.0178 13.5718 12.2143 13.8571C11.4107 14.1425 10.6071 13.8725 10.6071 13.8725C11.1535 15.9448 11.9785 17.7288 13.2251 16.9379Z"
+                                fill="white"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M7.04826 9.17689C6.59029 9.22824 6.34906 9.40136 6.26768 9.48274C5.94625 9.80417 5.78554 10.1256 5.78554 10.2863C5.78554 10.447 5.40745 9.53393 5.32437 9.44837C5.07703 9.19366 5.083 8.78667 5.33771 8.53933C5.69527 8.19212 6.28003 7.96925 6.90502 7.89918C7.55323 7.82651 8.3219 7.9075 9.09971 8.25205C10.0075 8.65415 10.4937 9.50199 10.6773 10.2768C10.7705 10.6701 10.7943 11.0743 10.7466 11.4426C10.7002 11.8002 10.5781 12.1826 10.3242 12.4736C9.79525 13.0799 9.01508 13.0116 8.593 12.9221C8.35518 12.8716 8.14542 12.7975 7.99786 12.738C7.92303 12.7079 7.86158 12.6804 7.81747 12.6597C7.79535 12.6493 7.77743 12.6406 7.7642 12.6341C7.75757 12.6308 7.75211 12.628 7.74786 12.6259L7.7424 12.6231L7.74037 12.622L7.73915 12.6214C7.73915 12.6214 7.7388 12.6212 8.03568 12.051L7.7388 12.6212C7.42389 12.4573 7.30152 12.069 7.46548 11.7541C7.62912 11.4398 8.01612 11.3173 8.3307 11.4798M8.3307 11.4798L8.33145 11.4802L8.3307 11.4798ZM8.3307 11.4798L8.33531 11.4822C8.34052 11.4847 8.3498 11.4893 8.36271 11.4953C8.38864 11.5075 8.42852 11.5254 8.4788 11.5457C8.58146 11.5871 8.71705 11.6341 8.85982 11.6644C9.19892 11.7363 9.32081 11.668 9.3554 11.6284C9.38325 11.5965 9.44396 11.4899 9.47154 11.2773C9.49771 11.0755 9.48663 10.8281 9.42625 10.5733C9.30267 10.0519 9.00685 9.61712 8.57899 9.42759C8.02117 9.1805 7.48301 9.12815 7.04826 9.17689"
+                                fill="white"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M2.79812 2.53348C2.64176 2.85224 2.7734 3.2374 3.09216 3.39376C3.55 3.61834 3.94731 3.83979 4.34068 4.28331C4.57627 4.54892 4.98258 4.57326 5.2482 4.33767C5.51381 4.10208 5.53815 3.69577 5.30256 3.43016C4.742 2.79815 4.16499 2.48794 3.65839 2.23944C3.33963 2.08308 2.95448 2.21473 2.79812 2.53348Z"
+                                fill="white"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M6.27275 0.662519C5.92831 0.748629 5.71889 1.09766 5.805 1.4421C5.86516 1.68274 5.92127 1.8885 5.97263 2.07686C6.07093 2.43738 6.15185 2.73415 6.21054 3.08969C6.26837 3.43999 6.59923 3.67708 6.94952 3.61926C7.29982 3.56143 7.53692 3.23058 7.47909 2.88028C7.40972 2.46006 7.3017 2.06246 7.19328 1.66338C7.14526 1.48666 7.09717 1.30966 7.05233 1.13027C6.96622 0.785827 6.61719 0.57641 6.27275 0.662519Z"
+                                fill="white"
+                            />
+                            <path
+                                d="M8.99979 3.21456C9.16051 2.57171 9.32122 2.08956 9.61377 1.60742"
+                                stroke="white"
+                                stroke-width="1.28571"
+                                stroke-miterlimit="10"
+                                stroke-linecap="round"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M11.3613 6.26832C12.6366 6.52316 12.6368 6.52221 12.6368 6.52221L12.637 6.52126L12.6373 6.51931L12.6381 6.51527L12.6396 6.50658C12.6407 6.50054 12.6418 6.49395 12.6429 6.48687C12.6452 6.47271 12.6476 6.45641 12.65 6.43816C12.6548 6.40191 12.6596 6.35662 12.6628 6.30419C12.6689 6.20315 12.6702 6.05635 12.6443 5.88608C12.5954 5.56354 12.4075 4.95215 11.7455 4.59774L11.6146 4.52762L11.4715 4.48801L11.1424 5.7144C11.4358 5.8715 11.3613 6.26832 11.3613 6.26832ZM11.1573 7.07742L11.3613 6.26832L12.6366 6.52316L12.6296 6.56049L12.4237 7.37732C12.3841 7.57807 12.3789 7.69285 12.381 7.75349C12.3828 7.80284 12.3892 7.81904 12.3924 7.82698L12.3927 7.8279C12.4008 7.84841 12.4216 7.89289 12.4977 8.00832C12.5287 8.05537 12.561 8.10252 12.6021 8.1626C12.613 8.1785 12.6245 8.19531 12.6367 8.21327C12.6919 8.29416 12.7565 8.38953 12.825 8.49621C13.2527 9.16281 13.2947 9.80259 13.2925 10.2126C13.2924 10.2186 13.2924 10.2246 13.2923 10.2305C13.3435 10.2481 13.3978 10.2658 13.4555 10.2841C13.4745 10.2902 13.4997 10.2982 13.5262 10.3065C13.5634 10.3183 13.6031 10.3308 13.6314 10.3399C13.6872 10.3577 13.7584 10.381 13.8272 10.4067C13.8751 10.4245 13.9211 10.4423 13.9644 10.4603C14.0059 10.4775 14.0566 10.4995 14.1099 10.5264C14.1513 10.5473 14.2186 10.5831 14.2948 10.6359L14.9647 10.9242L14.955 11.7823C14.9493 12.2868 14.7463 12.8187 14.6023 13.148C14.4436 13.5111 14.2339 13.8983 14.0408 14.1556C13.7712 14.515 13.4657 14.8945 13.0981 15.1372C12.8815 15.2802 12.6198 15.394 12.3111 15.4313C12.0361 15.4645 11.7981 15.4277 11.6232 15.3851L11.5717 15.3745C11.5199 15.3639 11.4456 15.3486 11.3553 15.3298C11.1748 15.2922 10.9287 15.2404 10.6678 15.1837C10.1867 15.0793 9.53471 14.9331 9.22715 14.8311L9.20492 14.8237L9.18296 14.8155C9.04655 14.7649 8.81591 14.7081 8.43387 14.621C8.41077 14.6157 8.38722 14.6103 8.36328 14.6049C8.03371 14.5299 7.6281 14.4376 7.24401 14.3212C6.8462 14.2008 6.35418 14.0216 5.9364 13.7296C5.4979 13.4232 4.99936 12.8829 4.9716 12.0723C4.96744 11.951 4.97023 11.8337 4.97774 11.7224C4.78027 11.5084 4.61454 11.2286 4.53078 10.8703C4.44918 10.5212 4.49431 10.2118 4.55156 9.99459C4.60897 9.7768 4.69617 9.58643 4.76904 9.44413C4.79364 9.3961 4.81915 9.34874 4.8446 9.30298C4.60356 9.22692 4.3313 9.13294 4.06631 9.01999C3.72023 8.87246 3.22918 8.62908 2.86258 8.2362C2.66514 8.0246 2.4584 7.72132 2.37481 7.3248C2.28733 6.90985 2.36002 6.51171 2.53036 6.1708C2.94502 5.34093 3.73706 5.04773 4.44152 5.02237C5.07762 4.99946 5.75449 5.17745 6.36097 5.39016C6.91355 5.58397 7.70443 5.94444 8.3763 6.25842C8.5976 5.89554 8.88932 5.48549 9.16548 5.15432L9.22034 5.08854L9.28382 5.03075C9.75896 4.59828 10.2927 4.45288 10.6994 4.42169C10.8988 4.4064 11.0705 4.41781 11.1989 4.43448C11.2638 4.44291 11.3198 4.45295 11.3652 4.46245C11.388 4.46721 11.4083 4.47188 11.426 4.4762C11.4349 4.47837 11.4431 4.48045 11.4507 4.48243L11.4616 4.48531L11.4666 4.48668L11.4691 4.48735L11.4703 4.48768C11.4703 4.48768 11.4715 4.48801 11.1424 5.7144C11.1424 5.7144 10.6292 5.57232 10.188 5.96175C10.1836 5.96567 10.1792 5.96965 10.1747 5.97368C10.161 5.99009 10.1473 6.0067 10.1336 6.02351C10.1139 6.04768 10.0941 6.07224 10.0743 6.09711C10.0685 6.10441 10.0627 6.11174 10.0569 6.1191C9.61666 6.67768 9.64277 6.91103 8.83914 7.87543C8.83914 7.87543 8.4205 7.68157 8.1701 7.56386C7.9983 7.48311 7.81669 7.39774 7.63164 7.31169C7.03464 7.03411 6.40173 6.74946 5.94628 6.58972C4.82494 6.19643 3.99821 6.14651 3.69645 6.75042C3.29839 7.54707 4.9148 8.00866 5.72705 8.24061C5.8981 8.28945 6.03349 8.32811 6.10689 8.35758C6.52348 8.52479 6.55255 8.86031 6.42848 9.16103C6.35609 9.33651 6.31482 9.43541 6.10706 9.64317C5.78563 9.9646 5.73292 10.3452 5.7943 10.6078C5.82503 10.7392 5.88582 10.8348 5.95809 10.9044C6.15197 11.0909 6.42842 11.0897 6.42842 11.0897C6.42842 11.0897 6.25016 11.5453 6.26759 12.0541C6.27143 12.1661 6.30155 12.268 6.35346 12.3612C6.66163 12.9145 7.73774 13.1596 8.64189 13.3655C9.02162 13.452 9.37102 13.5316 9.62046 13.6242C10.0676 13.7726 11.8925 14.1433 11.8925 14.1433C12.2292 14.2317 12.438 14.1247 12.9919 13.3864C13.2219 13.0797 13.653 12.2123 13.6583 11.7435C13.5884 11.7134 13.5835 11.7029 13.5786 11.6924C13.5718 11.6779 13.565 11.6633 13.3882 11.5974C13.329 11.5754 13.2499 11.5504 13.1593 11.5218C12.7822 11.4029 12.2071 11.2215 12.0534 10.929C11.9788 10.787 11.9846 10.5964 11.9915 10.3736C12.0022 10.0271 12.0153 9.60261 11.732 9.16115C11.6624 9.05276 11.5957 8.95523 11.5333 8.864C11.1781 8.34469 10.9626 8.0296 11.1573 7.07742ZM5.21736 8.64574C5.21818 8.64341 5.21787 8.64394 5.21684 8.64717L5.21736 8.64574ZM13.2859 10.6214C13.2859 10.6214 13.2859 10.6164 13.2849 10.6077C13.2852 10.6173 13.2859 10.6214 13.2859 10.6214Z"
+                                fill="white"
+                            />
+                        </svg>
+                        <div class="title">Made with Manus</div>
+                        <div class="create-title">Create my website</div>
+                    </div>
+                    <div class="footer-dialog">
+                        <div class="dialog-box">
+                            <div class="dialog-header">
+                                <div class="dialog-header-title">Made with Manus</div>
+                                <span class="dialog-header-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M3.2729 3.27192C3.5365 3.00832 3.96389 3.00832 4.22749 3.27192L9.0002 8.04462L13.7729 3.27192C14.0365 3.00832 14.4639 3.00832 14.7275 3.27192C14.9911 3.53553 14.9911 3.96291 14.7275 4.22652L9.95479 8.99922L14.7275 13.7719C14.9911 14.0355 14.9911 14.4629 14.7275 14.7265C14.4639 14.9901 14.0365 14.9901 13.7729 14.7265L9.0002 9.95381L4.22749 14.7265C3.96389 14.9901 3.5365 14.9901 3.2729 14.7265C3.00929 14.4629 3.00929 14.0355 3.2729 13.7719L8.0456 8.99922L3.2729 4.22652C3.00929 3.96291 3.00929 3.53553 3.2729 3.27192Z"
+                                            fill="#858481"
+                                        />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="dialog-body">
+                                <div>This user-generated website was created with AI. Use with caution.</div>
+                                <div>
+                                    Not an official Manus website nor endorsed by Manus. Content may contain inaccuracies; double-check before use. Do not submit
+                                    passwords, credit cards, or personal information.
+                                </div>
+                            </div>
+                            <div class="dialog-footer">
+                                <div class="dialog-footer-button-left">Cancel</div>
+                                <div class="dialog-footer-button-right" onclick="createSite()">Create my website</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+                // 创建样式
+                const style = document.createElement('style');
+                style.textContent = `
+            @keyframes changeWidth {
+                0% {
+                    width: 150px;
+                    background-color: transparent;
+                }
+                100% {
+                    width: 574px;
+                    background-color: #fff;
+                }
+            }
+
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                border: unset;
+            }
+
+            * {
+                line-height: 1.2;
+                text-shadow: initial;
+                font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            }
+
+            a {
+                text-decoration: unset;
+            }
+
+            .page-footer-mobile {
+                z-index: 10000;
+                display: none;
+                position: absolute;
+                right: 16px;
+                bottom: 16px;
+            }
+
+            .page-footer {
+                z-index: 10000;
+                display: flex;
+                padding: 4px 4px 4px 12px;
+                align-items: center;
+                gap: 16px;
+                position: fixed;
+                right: 16px;
+                bottom: 16px;
+                border-radius: 24px;
+                border: 1px solid transparent;
+                background: transparent;
+                transition: 0.3s;
+            }
+
+            .footer-close-btn {
+                display: none;
+                z-index: 10002;
+                cursor: pointer;
+                position: absolute;
+                right: -3px;
+                top: -3px;
+            }
+
+            .footer-bg {
+                overflow: hidden;
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+                height: 38px;
+                width: 150px;
+                background-color: transparent;
+                border-radius: 24px;
+            }
+
+            .tooltip-box {
+                display: none;
+                transition: 0.3s;
+                z-index: 10001;
+                align-items: center;
+                gap: 1px;
+            }
+
+            .tooltip-desc {
+                color: #858481;
+                /* Label/Primary */
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 16px; /* 133.333% */
+            }
+
+            .footer-button {
+                z-index: 10001;
+                right: 16px;
+                bottom: 16px;
+                user-select: none;
+                cursor: pointer;
+                display: flex;
+                padding: 5px 10px;
+                align-items: center;
+                height: 30px;
+                gap: 2px;
+                transition: 0.3s;
+                border-radius: 14px;
+                border: 1px solid rgba(0, 0, 0, 0.06);
+                background: #1a1a19;
+                box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.06), 0px 8px 32px 0px rgba(0, 0, 0, 0.06);
+            }
+
+            .footer-logo {
+                width: 18px;
+                height: 18px;
+            }
+
+            .footer-button:hover .create-title {
+                opacity: 0.8;
+            }
+
+            .footer-button:hover .footer-logo {
+                opacity: 0.8;
+            }
+
+            .page-footer:hover .footer-close-btn {
+                display: block;
+            }
+
+            .page-footer:hover .create-title {
+                display: block;
+            }
+
+            .page-footer:hover .title {
+                display: none;
+            }
+
+            .page-footer:hover .footer-bg {
+                animation: changeWidth 0.3s ease-in-out forwards;
+                border: 1px solid rgba(0, 0, 0, 0.06);
+                background: #fff;
+                box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.06), 0px 8px 32px 0px rgba(0, 0, 0, 0.06);
+            }
+
+            .page-footer:hover .tooltip-box {
+                position: absolute;
+                text-wrap-mode: nowrap;
+                display: flex;
+                left: 10px;
+                top: 9px;
+            }
+
+            .tooltip-icon {
+                position: relative;
+                cursor: pointer;
+            }
+
+            .tooltip-dialog {
+                display: none;
+                position: absolute;
+                bottom: 154%;
+                left: -10%;
+                transform: translateX(-50%);
+                padding: 10px;
+                border-radius: 12px;
+                font-size: 12px;
+                line-height: 16px;
+                background-color: #171818;
+                color: #fff;
+                max-width: 280px;
+                width: max-content;
+            }
+
+            .title {
+                color: #fff;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 16px;
+            }
+
+            .create-title {
+                display: none;
+                color: #fff;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+            }
+
+            .footer-dialog {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                display: none;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .dialog-box {
+                display: flex;
+                width: 358px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+                border-radius: 20px;
+                border: 1px solid rgba(255, 255, 255, 0.04);
+                background: #fff;
+
+                /* menu/main */
+                box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.02), 0px 4px 32px 0px rgba(0, 0, 0, 0.16);
+                backdrop-filter: blur(40px);
+            }
+
+            .dialog-header {
+                display: flex;
+                padding: 16px 12px 8px 16px;
+                align-items: flex-start;
+                gap: 16px;
+                align-self: stretch;
+            }
+
+            .dialog-header-title {
+                flex: 1;
+                color: #34322d;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+            }
+
+            .dialog-body {
+                display: flex;
+                padding: 0px 16px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+                align-self: stretch;
+                color: #535350;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+            .dialog-footer {
+                display: flex;
+                padding: 16px;
+                align-items: flex-start;
+                gap: 12px;
+                align-self: stretch;
+            }
+
+            .dialog-footer-button-left {
+                display: flex;
+                width: 119px;
+                min-width: 114px;
+                min-height: 48px;
+                padding: 12px 24px;
+                justify-content: center;
+                align-items: center;
+                gap: 6px;
+                border-radius: 12px;
+                background: rgba(55, 53, 47, 0.06);
+                color: #34322d;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+            }
+
+            .dialog-footer-button-right {
+                display: flex;
+                min-width: 114px;
+                min-height: 48px;
+                padding: 12px 24px;
+                justify-content: center;
+                align-items: center;
+                gap: 6px;
+                flex: 1 0 0;
+                border-radius: 12px;
+                background: #1a1a19;
+                color: #fff;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+            }
+
+            @media (max-width: 600px) {
+                .page-footer {
+                    display: none;
+                }
+                .page-footer-mobile {
+                    display: block;
+                }
+                .footer-button {
+                    position: fixed
+                }
+            }
+            `;
+                // 将样式和内容添加到Shadow DOM
+                shadow.appendChild(style);
+                shadow.appendChild(wrapper);
+
+                // 在connectedCallback中设置事件监听器
+                this.setupEventListeners(shadow);
+            }
+            onclickEvent(shadow, domStr, fn) {
+                const clickDom = shadow.querySelector(domStr);
+                if (clickDom) {
+                    clickDom.onclick = (event) => {
+                        fn(event, clickDom);
+                    };
+                }
+            }
+            setupEventListeners(shadow) {
+                const changeDialogStyle = (displayStatus) => {
+                    const dialog = shadow.querySelector('.footer-dialog');
+                    if (dialog) {
+                        dialog.style.display = displayStatus;
+                    }
+                };
+
+                const createSite = () => {
+                    window.open('https://manus.im/invitation?from=space', '_blank');
+                    changeDialogStyle('none');
+                };
+
+                this.onclickEvent(shadow, '.page-footer-mobile .dialog-footer-button-left', () => {
+                    changeDialogStyle('none');
+                });
+
+                this.onclickEvent(shadow, '.page-footer-mobile .dialog-footer-button-right', () => {
+                    createSite();
+                });
+
+                this.onclickEvent(shadow, '.page-footer-mobile .dialog-header-icon', () => {
+                    changeDialogStyle('none');
+                });
+
+                this.onclickEvent(shadow, '.page-footer-mobile .footer-button', () => {
+                    changeDialogStyle('flex');
+                });
+
+                this.onclickEvent(shadow, '.footer-close-btn', () => {
+                    localStorage.setItem('embedClosed', 'true');
+                    shadow.querySelector('.page-footer').style.display = 'none';
+                    shadow.querySelector('.page-footer-mobile').style.display = 'none';
+                });
+
+                this.onclickEvent(shadow, '.page-footer-mobile .footer-dialog', (event, dialog) => {
+                    if (event.target === dialog) {
+                        changeDialogStyle('none');
+                    }
+                });
+
+                const tooltipIcon = shadow.querySelector('.tooltip-icon');
+                const tooltipDialog = shadow.querySelector('.tooltip-dialog');
+
+                tooltipIcon.addEventListener('mouseenter', function () {
+                    tooltipDialog.style.display = 'block';
+                });
+
+                tooltipIcon.addEventListener('mouseleave', function () {
+                    tooltipDialog.style.display = 'none';
+                });
+
+                if (localStorage.getItem('embedClosed')) {
+                    shadow.querySelector('.page-footer').style.display = 'none';
+                    shadow.querySelector('.page-footer-mobile').style.display = 'none';
+                }
+            }
+        }
+        // 注册自定义元素
+        customElements.define('footer-btn', FooterBtn);
+    </script>
+    <script defer data-domain="manus.space"
+        src="https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"></script>
+    <script>
+        window.plausible =
+            window.plausible ||
+            function () {
+                (window.plausible.q = window.plausible.q || []).push(arguments);
+            };
+        plausible('custom-pageview', {
+            props: {
+                domain: window.location.host
+            }
+        })
+    </script>
+</body>
+
+</html>

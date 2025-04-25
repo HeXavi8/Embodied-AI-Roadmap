@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>专家阶段 - 具身智能学习路径</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 字体 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- 图标 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">具身智能学习路径</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">首页</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="learningPathDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            学习路径
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="learningPathDropdown">
+                            <li><a class="dropdown-item" href="beginner.html">入门阶段</a></li>
+                            <li><a class="dropdown-item" href="intermediate.html">进阶阶段</a></li>
+                            <li><a class="dropdown-item" href="professional.html">专业阶段</a></li>
+                            <li><a class="dropdown-item active" href="expert.html">专家阶段</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="topicsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            主题探索
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="topicsDropdown">
+                            <li><a class="dropdown-item" href="../topics/basic-concepts.html">基础概念</a></li>
+                            <li><a class="dropdown-item" href="../topics/core-technologies.html">核心技术</a></li>
+                            <li><a class="dropdown-item" href="../topics/system-design.html">系统设计</a></li>
+                            <li><a class="dropdown-item" href="../topics/application-areas.html">应用领域</a></li>
+                            <li><a class="dropdown-item" href="../topics/frontier-research.html">前沿研究</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../resources.html">资源中心</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../projects.html">项目实践</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">关于</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <!-- <input class="form-control me-2" type="search" placeholder="搜索" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">搜索</button> -->
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面标题 -->
+    <div class="bg-primary text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1>专家阶段学习路径</h1>
+                    <p class="lead mb-0">探索前沿研究，开展创新工作，成为具身智能领域的专家</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <button class="btn btn-outline-light" id="track-progress">
+                        <i class="bi bi-check-circle me-1"></i> 跟踪我的进度
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 进度指示器 -->
+    <div class="bg-light py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <div class="progress-steps">
+                        <div class="progress-step completed">
+                            <div class="progress-indicator"><i class="bi bi-check"></i></div>
+                            <a href="beginner.html">入门阶段</a>
+                        </div>
+                        <div class="progress-step completed">
+                            <div class="progress-indicator"><i class="bi bi-check"></i></div>
+                            <a href="intermediate.html">中级阶段</a>
+                        </div>
+                        <div class="progress-step completed">
+                            <div class="progress-indicator"><i class="bi bi-check"></i></div>
+                            <a href="professional.html">专业阶段</a>
+                        </div>
+                        <div class="progress-step active">
+                            <div class="progress-indicator">4</div>
+                            <a href="expert.html">专家阶段</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                            aria-valuemin="0" aria-valuemax="100">100%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主要内容 -->
+    <div class="container py-5">
+        <div class="row">
+            <!-- 左侧内容 -->
+            <div class="col-lg-8">
+                <!-- 阶段概述 -->
+                <section class="mb-5" id="section-overview">
+                    <h2 class="border-bottom pb-2 mb-4">阶段概述</h2>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p class="lead">专家阶段是具身智能学习的最高阶段，您将探索前沿研究方向，开展创新研究，并成为具身智能领域的专家和领导者。</p>
+                            <p>在这个阶段，您将深入研究具身智能的前沿方向，如通用具身智能、生物启发机器人学、人机共生系统等。您将学习如何设计和开展原创性研究，解决具身智能领域的开放性问题，并为该领域的发展做出贡献。
+                            </p>
+                            <p>通过专家阶段的学习，您将能够：</p>
+                            <ul>
+                                <li>理解并推动具身智能的前沿研究</li>
+                                <li>设计和开展原创性研究项目</li>
+                                <li>解决具身智能领域的开放性问题</li>
+                                <li>开发创新的具身智能系统和方法</li>
+                                <li>为具身智能领域的发展做出贡献</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-info">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <i class="bi bi-info-circle-fill fs-4"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5>预计学习时间</h5>
+                                <p class="mb-0">专家阶段是一个持续发展的过程，通常需要1-2年或更长时间的深入研究和实践。具体时间取决于您的研究方向和目标。</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 学习目标 -->
+                <section class="mb-5" id="section-objectives">
+                    <h2 class="border-bottom pb-2 mb-4">学习目标</h2>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 border-primary">
+                                <div class="card-header bg-primary text-white">
+                                    <h3 class="card-title h5 mb-0">研究能力</h3>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">掌握科学研究方法论</li>
+                                        <li class="list-group-item">理解前沿研究方向和挑战</li>
+                                        <li class="list-group-item">学习实验设计和评估方法</li>
+                                        <li class="list-group-item">培养批判性思维和创新能力</li>
+                                        <li class="list-group-item">掌握学术写作和交流技巧</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 border-success">
+                                <div class="card-header bg-success text-white">
+                                    <h3 class="card-title h5 mb-0">专业技能</h3>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">设计和开展原创性研究项目</li>
+                                        <li class="list-group-item">开发创新的具身智能系统和方法</li>
+                                        <li class="list-group-item">撰写高质量的研究论文和报告</li>
+                                        <li class="list-group-item">参与学术交流和合作研究</li>
+                                        <li class="list-group-item">指导和培养新一代研究者</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 前沿研究方向 -->
+                <section class="mb-5" id="section-frontier-research">
+                    <h2 class="border-bottom pb-2 mb-4">前沿研究方向</h2>
+
+                    <!-- 通用具身智能 -->
+                    <div class="card mb-4" id="research-general-embodied-ai">
+                        <div class="card-header bg-light">
+                            <h3 class="card-title h4 mb-0">通用具身智能</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>通用具身智能旨在开发能够在多种环境和任务中学习和适应的智能系统，这是具身智能研究的终极目标之一。</p>
+
+                            <h4 class="h5 mt-4">研究挑战</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>跨任务学习与迁移</li>
+                                        <li>持续学习与适应</li>
+                                        <li>抽象表示与概念学习</li>
+                                        <li>内在动机与好奇心驱动</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>多模态理解与推理</li>
+                                        <li>自主探索与技能获取</li>
+                                        <li>社会学习与模仿</li>
+                                        <li>长期规划与决策</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4 class="h5 mt-4">关键论文与资源</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="d-flex mb-2">
+                                        <div class="flex-shrink-0">
+                                            <i class="bi bi-journal-code text-primary me-2"></i>
+                                        </div>
+                                        <div>
+                                            <a href="https://arxiv.org/abs/2102.09796" target="_blank">Embodied
+                                                Intelligence via Learning and Evolution</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <div class="flex-shrink-0">
+                                            <i class="bi bi-journal-code text-primary me-2"></i>
+                                        </div>
+                                        <div>
+                                            <a href="https://arxiv.org/abs/2004.10151" target="_blank">Never Stop
+                                                Learning: The Effectiveness of Fine-Tuning in Robotic Reinforcement
+                                                Learning</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex mb-2">
+                                        <div class="flex-shrink-0">
+                                            <i class="bi bi-github text-primary me-2"></i>
+                                        </div>
+                                        <div>
+                                            <a href="https://github.com/openai/gym-retro" target="_blank">OpenAI Gym
+                                                Retro</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <div class="flex-shrink-0">
+                                            <i class="bi bi-journal-code text-primary me-2"></i>
+                                        </div>
+                                        <div>
+                                            <a href="https://arxiv.org/abs/2103.01021" target="_blank">Open-Ended
+                                                Learning Leads to Generally Capable Agents</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4 class="h5 mt-4">研究方向</h4>
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h5 class="card-title">研究方向：开放式学习的通用具身智能</h5>
+                                    <p class="card-text">
+                                        探索如何设计能够在开放环境中持续学习和适应的具身智能系统。研究内在动机机制、抽象表示学习、技能获取和迁移等方面，以实现真正的通用具身智能。</p>
+                                    <div class="mt-3">
+                                        <span class="badge bg-primary me-2">开放式学习</span>
+                                        <span class="badge bg-primary me-2">内在动机</span>
+                                        <span class="badge bg-primary me-2">技能获取</span>
+                                        <span class="badge bg-primary">迁移学习</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 生物启发机器人学 -->
+                    <div class="card mb-4" id="research-bio-inspired">
+                        <div class="card-header bg-light">
+                            <h3 class="card-title h4 mb-0">生物启发机器人学</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>生物启发机器人学从生物系统中汲取灵感，开发具有生物特性的机器人系统，如柔性机器人、仿生感知和生物力学设计等。</p>
+
+                            <h4 class="h5 mt-4">研究挑战</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>柔性材料与驱动</li>
+                                        <li>仿生感知系统</li>
+                                        <li>生物力学与运动控制</li>
+                                        <li>自修复与适应机制</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>神经控制与学习</li>
+                                        <li>群体智能与协作</li>
+                                        <li>能量效率与自主性</li>
+                                        <li>生物材料与制造</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4 class="h5 mt-4">关键论文与资源</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="d-flex mb-2">
+                                        <div class="flex-shrink-0">
+                                            <i class="bi bi-journal-code text-primary me-2"></i>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.science.org/doi/10.1126/scirobotics.aay2627"
+                                                target="_blank">Bioinspired soft robotics: Material selection,
+                                                actuation, and design</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <div class="flex-shrink-0">
+                                            <i class="bi bi-journal-code text-primary me-2"></i>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.nature.com/articles/s41586-019-1157-8"
+                                                target="_blank">A robotic platform for flow-based investigation of
+                                                neuromechanics in soft animals</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex mb-2">
+                                        <div class="flex-shrink-0">
+                                            <i class="bi bi-journal-code text-primary me-2"></i>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.science.org/doi/10.1126/scirobotics.aaz6262"
+                                                target="_blank">Bioinspired neuromuscular control for efficient and
+                                                adaptive locomotion in soft robots</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <div class="flex-shrink-0">
+                                            <i class="bi bi-link-45deg text-primary me-2"></i>
+                                        </div>
+                                        <div>
+                                            <a href="https://softroboticstoolkit.com/" target="_blank">Soft Robotics
+                                                Toolkit</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4 class="h5 mt-4">研究方向</h4>
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h5 class="card-title">研究方向：仿生感知与控制系统</h5>
+                                    <p class="card-text">研究生物感知系统的原理和机制，开发具有类似功能的人工感知系统。探索生物神经控制机制，设计能够适应复杂环境的仿生控制算法。
+                                    </p>
+                                    <div class="mt-3">
+                                        <span class="badge bg-primary me-2">仿生感知</span>
+                                        <span class="badge bg-primary me-2">神经控制</span>
+                                        <span class="badge bg-primary me-2">柔性机器人</span>
+                                        <span class="badge bg-primary">生物力学</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 人机共生系统 -->
+                    <div class="card mb-4" id="research-human-robot">
+                        <div class="card-header bg-light">
+                            <h3 class="card-title h4 mb-0">人机共生系统</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>人机共生系统研究人类与具身智能系统的协同工作和交互，旨在实现人类能力的增强和人机协作的优化。</p>
+
+                            <h4 class="h5 mt-4">研究挑战</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>自然人机交互</li>
+                                        <li>意图理解与预测</li>
+                                        <li>共享控制与协作</li>
+                                        <li>人机信任与接受度</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>可穿戴与增强系统</li>
+                                        <li>人机学习与适应</li>
+                                        <li>社会与伦理影响</li>
+                                        <li>长期人机关系</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4 class="h5 mt-4">关键论文与资源</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="d-flex mb-2">
+                                        <div class="flex-shrink-0">
+                                            <i class="bi bi-journal-code text-primary me-2"></i>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.science.org/doi/10.1126/scirobotics.aau5872"
+                                                target="_blank">Human-robot interaction: From passive to active and
+                                                cooperative physical interaction</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <div class="flex-shrink-0">
+                                            <i class="bi bi-journal-code text-primary me-2"></i>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.nature.com/articles/s41467-019-13154-w"
+                                                target="_blank">Shared autonomy via deep reinforcement learning</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex mb-2">
+                                        <div class="flex-shrink-0">
+                                            <i class="bi bi-journal-code text-primary me-2"></i>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.science.org/doi/10.1126/scirobotics.aay9108"
+                                                target="_blank">Wearable robotics for motion assistance and
+                                                rehabilitation</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <div class="flex-shrink-0">
+                                            <i class="bi bi-link-45deg text-primary me-2"></i>
+                                        </div>
+                                        <div>
+                                            <a href="https://humanrobotinteraction.org/" target="_blank">Human-Robot
+                                                Interaction Society</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4 class="h5 mt-4">研究方向</h4>
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h5 class="card-title">研究方向：自适应人机协作系统</h5>
+                                    <p class="card-text">
+                                        研究如何设计能够理解人类意图、预测行为并自适应调整的人机协作系统。探索共享控制机制、互信建立和长期适应性，以实现人机能力的互补和增强。</p>
+                                    <div class="mt-3">
+                                        <span class="badge bg-primary me-2">意图理解</span>
+                                        <span class="badge bg-primary me-2">共享控制</span>
+                                        <span class="badge bg-primary me-2">自适应交互</span>
+                                        <span class="badge bg-primary">人机信任</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 具身语言与多模态学习 -->
+                    <div class="card mb-4" id="research-embodied-language">
+                        <div class="card-header bg-light">
+                            <h3 class="card-title h4 mb-0">具身语言与多模态学习</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>具身语言与多模态学习研究如何将语言理解与物理交互结合，使具身智能系统能够通过语言指令学习和执行任务。</p>
+
+                            <h4 class="h5 mt-4">研究挑战</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>语言引导的探索与学习</li>
+                                        <li>多模态表示与对齐</li>
+                                        <li>符号接地与概念学习</li>
+                                        <li>指令遵循与任务执行</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>交互式语言学习</li>
+                                        <li>语言生成与解释</li>
+                                        <li>跨模态知识迁移</li>
+                                        <li>对话式交互与协作</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4 class="h5 mt-4">关键论文与资源</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="d-flex mb-2">
+                                        <div class="flex-shrink-0">
+                                            <i class="bi bi-journal-code text-primary me-2"></i>
+                                        </div>
+                                        <div>
+                                            <a href="https://arxiv.org/abs/2103.01977" target="_blank">Learning to
+                                                Follow Language Instructions with Adversarial Reward Induction</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <div class="flex-shrink-0">
+                                            <i class="bi bi-journal-code text-primary me-2"></i>
+                                        </div>
+                                        <div>
+                                            <a href="https://arxiv.org/abs/2004.14602" target="_blank">Interactive
+                                                Language Learning by Question Answering</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex mb-2">
+                                        <div class="flex-shrink-0">
+                                            <i class="bi bi-github text-primary me-2"></i>
+                                        </div>
+                                        <div>
+                                            <a href="https://github.com/allenai/allenact" target="_blank">AllenAct</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <div class="flex-shrink-0">
+                                            <i class="bi bi-journal-code text-primary me-2"></i>
+                                        </div>
+                                        <div>
+                                            <a href="https://arxiv.org/abs/2107.06383" target="_blank">Language Models
+                                                as Zero-Shot Planners: Extracting Actionable Knowledge for Embodied
+                                                Agents</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4 class="h5 mt-4">研究方向</h4>
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h5 class="card-title">研究方向：语言引导的具身学习与交互</h5>
+                                    <p class="card-text">研究如何利用语言指导具身智能系统学习新技能和执行复杂任务。探索语言与物理交互的结合，实现自然语言指令的理解、规划和执行。
+                                    </p>
+                                    <div class="mt-3">
+                                        <span class="badge bg-primary me-2">语言引导学习</span>
+                                        <span class="badge bg-primary me-2">符号接地</span>
+                                        <span class="badge bg-primary me-2">多模态对齐</span>
+                                        <span class="badge bg-primary">指令遵循</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 研究方法论 -->
+                <section class="mb-5" id="section-research-methodology">
+                    <h2 class="border-bottom pb-2 mb-4">研究方法论</h2>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p>掌握科学研究方法论是成为具身智能专家的关键。以下是开展具身智能研究的核心方法和技能。</p>
+
+                            <h4 class="h5 mt-4">研究设计与实施</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>研究问题的识别与定义</li>
+                                        <li>文献综述与研究空白分析</li>
+                                        <li>研究假设的提出与验证</li>
+                                        <li>实验设计与控制变量</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>数据收集与分析方法</li>
+                                        <li>结果解释与讨论</li>
+                                        <li>研究局限性与未来方向</li>
+                                        <li>研究伦理与责任</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4 class="h5 mt-4">学术交流与合作</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>学术论文写作与发表</li>
+                                        <li>会议报告与海报展示</li>
+                                        <li>研究项目申请与管理</li>
+                                        <li>同行评议与反馈</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>跨学科合作与交流</li>
+                                        <li>研究团队组建与管理</li>
+                                        <li>开源代码与数据共享</li>
+                                        <li>科学传播与公众参与</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4 class="h5 mt-4">推荐资源</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="d-flex mb-2">
+                                        <div class="flex-shrink-0">
+                                            <i class="bi bi-book-fill text-primary me-2"></i>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.amazon.com/Research-Design-Qualitative-Quantitative-Approaches/dp/1506386709"
+                                                target="_blank">Research Design: Qualitative, Quantitative, and Mixed
+                                                Methods Approaches (Creswell)</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <div class="flex-shrink-0">
+                                            <i class="bi bi-book-fill text-primary me-2"></i>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.amazon.com/Writing-Science-Papers-Proposals-Funded/dp/0199760241"
+                                                target="_blank">Writing Science: How to Write Papers That Get Cited and
+                                                Proposals That Get Funded (Schimel)</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex mb-2">
+                                        <div class="flex-shrink-0">
+                                            <i class="bi bi-mortarboard-fill text-primary me-2"></i>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.coursera.org/learn/sciwrite" target="_blank">Writing in
+                                                the Sciences (Stanford, Coursera)</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <div class="flex-shrink-0">
+                                            <i class="bi bi-link-45deg text-primary me-2"></i>
+                                        </div>
+                                        <div>
+                                            <a href="https://arxiv.org/abs/1708.02709" target="_blank">A Survival Guide
+                                                to a PhD</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 专家级项目 -->
+                <section class="mb-5" id="section-expert-projects">
+                    <h2 class="border-bottom pb-2 mb-4">专家级项目</h2>
+                    <p>以下是专家阶段的研究项目示例，这些项目将帮助您探索前沿研究方向，开展创新工作。</p>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="card-title h5">开放式学习的通用具身智能</h3>
+                                    <p class="card-text">研究如何设计能够在开放环境中持续学习和适应的具身智能系统，实现真正的通用具身智能。</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-danger">专家级</span>
+                                        <a href="../projects.html" class="btn btn-outline-primary btn-sm">查看详情</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="card-title h5">仿生感知与控制系统</h3>
+                                    <p class="card-text">研究生物感知系统的原理和机制，开发具有类似功能的人工感知系统和仿生控制算法。</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-danger">专家级</span>
+                                        <a href="../projects.html" class="btn btn-outline-primary btn-sm">查看详情</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="card-title h5">自适应人机协作系统</h3>
+                                    <p class="card-text">研究如何设计能够理解人类意图、预测行为并自适应调整的人机协作系统，实现人机能力的互补和增强。</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-danger">专家级</span>
+                                        <a href="../projects.html" class="btn btn-outline-primary btn-sm">查看详情</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="card-title h5">语言引导的具身学习与交互</h3>
+                                    <p class="card-text">研究如何利用语言指导具身智能系统学习新技能和执行复杂任务，实现自然语言指令的理解、规划和执行。</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-danger">专家级</span>
+                                        <a href="../projects.html" class="btn btn-outline-primary btn-sm">查看详情</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 学术与职业发展 -->
+                <section class="mb-5" id="section-career-development">
+                    <h2 class="border-bottom pb-2 mb-4">学术与职业发展</h2>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p>作为具身智能专家，您有多种学术和职业发展路径可以选择。以下是一些可能的发展方向和建议。</p>
+
+                            <h4 class="h5 mt-4">学术发展路径</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>攻读博士学位</li>
+                                        <li>申请博士后研究职位</li>
+                                        <li>加入学术研究机构</li>
+                                        <li>申请教职或研究员职位</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>建立自己的研究团队</li>
+                                        <li>申请研究基金和项目</li>
+                                        <li>参与学术会议和期刊编辑</li>
+                                        <li>开展国际合作研究</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4 class="h5 mt-4">产业发展路径</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>加入科技公司研发团队</li>
+                                        <li>担任技术顾问或专家</li>
+                                        <li>创办具身智能创业公司</li>
+                                        <li>开发具身智能产品和服务</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>参与产业标准制定</li>
+                                        <li>开展产学研合作项目</li>
+                                        <li>担任产业联盟或协会职务</li>
+                                        <li>参与技术转化和商业化</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h4 class="h5 mt-4">建议与资源</h4>
+                            <div class="alert alert-success">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="bi bi-lightbulb-fill fs-4"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5>专业发展建议</h5>
+                                        <ul>
+                                            <li>建立专业网络，积极参与学术和产业活动</li>
+                                            <li>保持对前沿研究的关注，持续学习和更新知识</li>
+                                            <li>寻找导师和合作者，共同开展研究和项目</li>
+                                            <li>平衡理论研究和实际应用，注重研究成果的影响力</li>
+                                            <li>关注具身智能的社会影响和伦理问题，负责任地开展研究和应用</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 结语 -->
+                <section class="mb-5" id="section-conclusion">
+                    <h2 class="border-bottom pb-2 mb-4">结语</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>恭喜您完成了具身智能学习路径的全部阶段！作为具身智能领域的专家，您已经掌握了深厚的理论知识和实践技能，能够开展前沿研究和创新工作。</p>
+                            <p>具身智能是一个快速发展的领域，充满了挑战和机遇。希望这个学习路径能够帮助您在这个领域取得成功，并为具身智能的发展做出贡献。</p>
+                            <p>记住，学习是一个持续的过程。即使作为专家，也要保持好奇心和学习的热情，不断探索新的知识和技术。祝您在具身智能领域的研究和工作取得成功！</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <a href="professional.html" class="btn btn-outline-primary">
+                                    <i class="bi bi-arrow-left me-1"></i> 返回专业阶段
+                                </a>
+                                <a href="../index.html" class="btn btn-primary">
+                                    返回首页 <i class="bi bi-house ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- 右侧边栏 -->
+            <div class="col-lg-4">
+                <!-- 学习路径导航 -->
+                <div class="card mb-4 sticky-top" style="top: 80px; z-index: 999;">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="card-title h5 mb-0">专家阶段导航</h3>
+                    </div>
+                    <div class="card-body">
+                        <nav class="nav flex-column">
+                            <a class="nav-link" href="#section-overview">阶段概述</a>
+                            <a class="nav-link" href="#section-objectives">学习目标</a>
+                            <a class="nav-link" href="#section-frontier-research">前沿研究方向</a>
+                            <ul class="list-unstyled ps-3">
+                                <li><a class="nav-link py-1" href="#research-general-embodied-ai">通用具身智能</a></li>
+                                <li><a class="nav-link py-1" href="#research-bio-inspired">生物启发机器人学</a></li>
+                                <li><a class="nav-link py-1" href="#research-human-robot">人机共生系统</a></li>
+                                <li><a class="nav-link py-1" href="#research-embodied-language">具身语言与多模态学习</a></li>
+                            </ul>
+                            <a class="nav-link" href="#section-research-methodology">研究方法论</a>
+                            <a class="nav-link" href="#section-expert-projects">专家级项目</a>
+                            <a class="nav-link" href="#section-career-development">学术与职业发展</a>
+                            <a class="nav-link" href="#section-conclusion">结语</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- 学习提示 -->
+                <div class="card mb-4">
+                    <div class="card-header bg-success text-white">
+                        <h3 class="card-title h5 mb-0">研究建议</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex mb-3">
+                            <div class="flex-shrink-0">
+                                <i class="bi bi-lightbulb-fill text-warning fs-4"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h4 class="h6">关注开放性问题</h4>
+                                <p class="mb-0">专注于具身智能领域的开放性问题和挑战，寻找有价值的研究方向。不要害怕挑战传统观点和方法。</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="flex-shrink-0">
+                                <i class="bi bi-diagram-3-fill text-warning fs-4"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h4 class="h6">跨学科思维</h4>
+                                <p class="mb-0">培养跨学科思维，从生物学、心理学、神经科学等领域汲取灵感。具身智能本质上是一个跨学科领域。</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <i class="bi bi-people-fill text-warning fs-4"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h4 class="h6">建立研究社区</h4>
+                                <p class="mb-0">积极参与学术社区，与同行交流和合作。开源您的研究成果，促进知识共享和集体进步。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 重要会议与期刊 -->
+                <div class="card mb-4">
+                    <div class="card-header bg-info text-white">
+                        <h3 class="card-title h5 mb-0">重要会议与期刊</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="h6 mb-2">顶级会议</h4>
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="bi bi-calendar-event text-primary"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5 class="h6 mb-0">ICRA</h5>
+                                        <p class="mb-0 small">IEEE International Conference on Robotics and Automation
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="bi bi-calendar-event text-primary"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5 class="h6 mb-0">IROS</h5>
+                                        <p class="mb-0 small">IEEE/RSJ International Conference on Intelligent Robots
+                                            and Systems</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="bi bi-calendar-event text-primary"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5 class="h6 mb-0">CoRL</h5>
+                                        <p class="mb-0 small">Conference on Robot Learning</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="bi bi-calendar-event text-primary"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5 class="h6 mb-0">HRI</h5>
+                                        <p class="mb-0 small">ACM/IEEE International Conference on Human-Robot
+                                            Interaction</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h4 class="h6 mb-2">顶级期刊</h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="bi bi-journal text-primary"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5 class="h6 mb-0">Science Robotics</h5>
+                                        <p class="mb-0 small">AAAS</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="bi bi-journal text-primary"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5 class="h6 mb-0">IEEE Transactions on Robotics</h5>
+                                        <p class="mb-0 small">IEEE</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="bi bi-journal text-primary"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5 class="h6 mb-0">International Journal of Robotics Research</h5>
+                                        <p class="mb-0 small">SAGE</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="bi bi-journal text-primary"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5 class="h6 mb-0">Robotics and Autonomous Systems</h5>
+                                        <p class="mb-0 small">Elsevier</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 研究实验室 -->
+                <div class="card">
+                    <div class="card-header bg-secondary text-white">
+                        <h3 class="card-title h5 mb-0">顶尖研究实验室</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>以下是具身智能领域的顶尖研究实验室，可以关注他们的研究成果和开放职位：</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <a href="https://bair.berkeley.edu/" target="_blank" class="text-decoration-none">
+                                    <i class="bi bi-building me-2 text-primary"></i> Berkeley Artificial Intelligence
+                                    Research (BAIR)
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://ai.stanford.edu/" target="_blank" class="text-decoration-none">
+                                    <i class="bi bi-building me-2 text-primary"></i> Stanford AI Lab
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://www.csail.mit.edu/" target="_blank" class="text-decoration-none">
+                                    <i class="bi bi-building me-2 text-primary"></i> MIT Computer Science and Artificial
+                                    Intelligence Laboratory
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://ai.meta.com/" target="_blank" class="text-decoration-none">
+                                    <i class="bi bi-building me-2 text-primary"></i> Meta AI Research
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://www.deepmind.com/" target="_blank" class="text-decoration-none">
+                                    <i class="bi bi-building me-2 text-primary"></i> Google DeepMind
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>具身智能学习路径</h5>
+                    <p class="text-muted">从入门到专家的系统化学习指南</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>快速链接</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="text-decoration-none text-muted">首页</a></li>
+                        <li><a href="beginner.html" class="text-decoration-none text-muted">学习路径</a></li>
+                        <li><a href="../resources.html" class="text-decoration-none text-muted">资源中心</a></li>
+                        <li><a href="../about.html" class="text-decoration-none text-muted">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>联系我们</h5>
+                    <ul class="list-unstyled text-muted">
+                        <!-- <li><i class="bi bi-envelope me-2"></i></li> -->
+                        <li><i class="bi bi-github me-2"></i>GitHub: HeXavi8</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="text-center text-muted">
+                <small>&copy; 2025 具身智能学习路径. 保留所有权利.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <footer-btn></footer-btn>
+    <script>
+        // 定义自定义元素
+        class FooterBtn extends HTMLElement {
+            constructor() {
+                super();
+                // 创建 Shadow DOM
+                const shadow = this.attachShadow({ mode: 'open' });
+                // 创建组件的HTML结构
+                const wrapper = document.createElement('div');
+                wrapper.setAttribute('class', 'wrapper');
+                // 添加一些内容到组件中
+                wrapper.innerHTML = `
+                <div class="page-footer">
+                    <div class="tooltip-dialog">Not an official Manus website nor endorsed by Manus. Content may contain inaccuracies; double-check before use. Do not submit passwords, credit cards, or personal information.</div>
+                    <div class="footer-close-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <g clip-path="url(#clip0_5850_97234)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.733398 8.00104C0.733398 3.98777 3.9868 0.734375 8.00006 0.734375C12.0133 0.734375 15.2667 3.98777 15.2667 8.00104C15.2667 12.0143 12.0133 15.2677 8.00006 15.2677C3.9868 15.2677 0.733398 12.0143 0.733398 8.00104Z" fill="white"/>
+                        <path d="M1.2334 8.00104C1.2334 4.26391 4.26294 1.23438 8.00006 1.23438C11.7372 1.23438 14.7667 4.26391 14.7667 8.00104C14.7667 11.7382 11.7372 14.7677 8.00006 14.7677C4.26294 14.7677 1.2334 11.7382 1.2334 8.00104Z" stroke="black" stroke-opacity="0.14" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.57576 5.57613C5.81007 5.34181 6.18997 5.34181 6.42429 5.57613L8.00002 7.15186L9.57576 5.57613C9.81007 5.34181 10.19 5.34181 10.4243 5.57613C10.6586 5.81044 10.6586 6.19034 10.4243 6.42465L8.84855 8.00039L10.4243 9.57613C10.6586 9.81044 10.6586 10.1903 10.4243 10.4247C10.19 10.659 9.81007 10.659 9.57576 10.4247L8.00002 8.84892L6.42429 10.4247C6.18997 10.659 5.81007 10.659 5.57576 10.4247C5.34145 10.1903 5.34145 9.81044 5.57576 9.57613L7.1515 8.00039L5.57576 6.42465C5.34145 6.19034 5.34145 5.81044 5.57576 5.57613Z" fill="#858481"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_5850_97234">
+                        <rect width="16" height="16" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    </div>
+                    <div class="footer-bg">
+                        <div class="tooltip-box">
+                            <div class="tooltip-desc">This user-generated website was created with AI. Use with caution.</div>
+                            <span
+                                class="tooltip-icon"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <g clip-path="url(#clip0_4345_83044)">
+                                        <path
+                                            d="M6 8V6M6 4H6.005M11 6C11 8.76142 8.76142 11 6 11C3.23858 11 1 8.76142 1 6C1 3.23858 3.23858 1 6 1C8.76142 1 11 3.23858 11 6Z"
+                                            stroke="#858481"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_4345_83044">
+                                            <rect width="12" height="12" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <a href="https://manus.im/invitation?from=space" target="_blank" class="footer-button">
+                        <span class="footer-logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path
+                                    d="M13.2251 16.9379C14.4717 16.147 15.3336 11.9052 15.144 10.6421C15.144 10.6421 14.9464 9.96396 14.4643 9.96394C13.9821 9.96391 13.7815 10.4719 13.7815 10.4719C13.7815 10.4719 13.6546 10.9409 13.4555 11.5313C13.1474 12.4447 13.0178 13.5718 12.2143 13.8571C11.4107 14.1425 10.6071 13.8725 10.6071 13.8725C11.1535 15.9448 11.9785 17.7288 13.2251 16.9379Z"
+                                    fill="white"
+                                />
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M7.04826 9.17689C6.59029 9.22824 6.34906 9.40136 6.26768 9.48274C5.94625 9.80417 5.78554 10.1256 5.78554 10.2863C5.78554 10.447 5.40745 9.53393 5.32437 9.44837C5.07703 9.19366 5.083 8.78667 5.33771 8.53933C5.69527 8.19212 6.28003 7.96925 6.90502 7.89918C7.55323 7.82651 8.3219 7.9075 9.09971 8.25205C10.0075 8.65415 10.4937 9.50199 10.6773 10.2768C10.7705 10.6701 10.7943 11.0743 10.7466 11.4426C10.7002 11.8002 10.5781 12.1826 10.3242 12.4736C9.79525 13.0799 9.01508 13.0116 8.593 12.9221C8.35518 12.8716 8.14542 12.7975 7.99786 12.738C7.92303 12.7079 7.86158 12.6804 7.81747 12.6597C7.79535 12.6493 7.77743 12.6406 7.7642 12.6341C7.75757 12.6308 7.75211 12.628 7.74786 12.6259L7.7424 12.6231L7.74037 12.622L7.73915 12.6214C7.73915 12.6214 7.7388 12.6212 8.03568 12.051L7.7388 12.6212C7.42389 12.4573 7.30152 12.069 7.46548 11.7541C7.62912 11.4398 8.01612 11.3173 8.3307 11.4798M8.3307 11.4798L8.33145 11.4802L8.3307 11.4798ZM8.3307 11.4798L8.33531 11.4822C8.34052 11.4847 8.3498 11.4893 8.36271 11.4953C8.38864 11.5075 8.42852 11.5254 8.4788 11.5457C8.58146 11.5871 8.71705 11.6341 8.85982 11.6644C9.19892 11.7363 9.32081 11.668 9.3554 11.6284C9.38325 11.5965 9.44396 11.4899 9.47154 11.2773C9.49771 11.0755 9.48663 10.8281 9.42625 10.5733C9.30267 10.0519 9.00685 9.61712 8.57899 9.42759C8.02117 9.1805 7.48301 9.12815 7.04826 9.17689"
+                                    fill="white"
+                                />
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M2.79812 2.53348C2.64176 2.85224 2.7734 3.2374 3.09216 3.39376C3.55 3.61834 3.94731 3.83979 4.34068 4.28331C4.57627 4.54892 4.98258 4.57326 5.2482 4.33767C5.51381 4.10208 5.53815 3.69577 5.30256 3.43016C4.742 2.79815 4.16499 2.48794 3.65839 2.23944C3.33963 2.08308 2.95448 2.21473 2.79812 2.53348Z"
+                                    fill="white"
+                                />
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M6.27275 0.662519C5.92831 0.748629 5.71889 1.09766 5.805 1.4421C5.86516 1.68274 5.92127 1.8885 5.97263 2.07686C6.07093 2.43738 6.15185 2.73415 6.21054 3.08969C6.26837 3.43999 6.59923 3.67708 6.94952 3.61926C7.29982 3.56143 7.53692 3.23058 7.47909 2.88028C7.40972 2.46006 7.3017 2.06246 7.19328 1.66338C7.14526 1.48666 7.09717 1.30966 7.05233 1.13027C6.96622 0.785827 6.61719 0.57641 6.27275 0.662519Z"
+                                    fill="white"
+                                />
+                                <path
+                                    d="M8.99979 3.21456C9.16051 2.57171 9.32122 2.08956 9.61377 1.60742"
+                                    stroke="white"
+                                    stroke-width="1.28571"
+                                    stroke-miterlimit="10"
+                                    stroke-linecap="round"
+                                />
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M11.3613 6.26832C12.6366 6.52316 12.6368 6.52221 12.6368 6.52221L12.637 6.52126L12.6373 6.51931L12.6381 6.51527L12.6396 6.50658C12.6407 6.50054 12.6418 6.49395 12.6429 6.48687C12.6452 6.47271 12.6476 6.45641 12.65 6.43816C12.6548 6.40191 12.6596 6.35662 12.6628 6.30419C12.6689 6.20315 12.6702 6.05635 12.6443 5.88608C12.5954 5.56354 12.4075 4.95215 11.7455 4.59774L11.6146 4.52762L11.4715 4.48801L11.1424 5.7144C11.4358 5.8715 11.3613 6.26832 11.3613 6.26832ZM11.1573 7.07742L11.3613 6.26832L12.6366 6.52316L12.6296 6.56049L12.4237 7.37732C12.3841 7.57807 12.3789 7.69285 12.381 7.75349C12.3828 7.80284 12.3892 7.81904 12.3924 7.82698L12.3927 7.8279C12.4008 7.84841 12.4216 7.89289 12.4977 8.00832C12.5287 8.05537 12.561 8.10252 12.6021 8.1626C12.613 8.1785 12.6245 8.19531 12.6367 8.21327C12.6919 8.29416 12.7565 8.38953 12.825 8.49621C13.2527 9.16281 13.2947 9.80259 13.2925 10.2126C13.2924 10.2186 13.2924 10.2246 13.2923 10.2305C13.3435 10.2481 13.3978 10.2658 13.4555 10.2841C13.4745 10.2902 13.4997 10.2982 13.5262 10.3065C13.5634 10.3183 13.6031 10.3308 13.6314 10.3399C13.6872 10.3577 13.7584 10.381 13.8272 10.4067C13.8751 10.4245 13.9211 10.4423 13.9644 10.4603C14.0059 10.4775 14.0566 10.4995 14.1099 10.5264C14.1513 10.5473 14.2186 10.5831 14.2948 10.6359L14.9647 10.9242L14.955 11.7823C14.9493 12.2868 14.7463 12.8187 14.6023 13.148C14.4436 13.5111 14.2339 13.8983 14.0408 14.1556C13.7712 14.515 13.4657 14.8945 13.0981 15.1372C12.8815 15.2802 12.6198 15.394 12.3111 15.4313C12.0361 15.4645 11.7981 15.4277 11.6232 15.3851L11.5717 15.3745C11.5199 15.3639 11.4456 15.3486 11.3553 15.3298C11.1748 15.2922 10.9287 15.2404 10.6678 15.1837C10.1867 15.0793 9.53471 14.9331 9.22715 14.8311L9.20492 14.8237L9.18296 14.8155C9.04655 14.7649 8.81591 14.7081 8.43387 14.621C8.41077 14.6157 8.38722 14.6103 8.36328 14.6049C8.03371 14.5299 7.6281 14.4376 7.24401 14.3212C6.8462 14.2008 6.35418 14.0216 5.9364 13.7296C5.4979 13.4232 4.99936 12.8829 4.9716 12.0723C4.96744 11.951 4.97023 11.8337 4.97774 11.7224C4.78027 11.5084 4.61454 11.2286 4.53078 10.8703C4.44918 10.5212 4.49431 10.2118 4.55156 9.99459C4.60897 9.7768 4.69617 9.58643 4.76904 9.44413C4.79364 9.3961 4.81915 9.34874 4.8446 9.30298C4.60356 9.22692 4.3313 9.13294 4.06631 9.01999C3.72023 8.87246 3.22918 8.62908 2.86258 8.2362C2.66514 8.0246 2.4584 7.72132 2.37481 7.3248C2.28733 6.90985 2.36002 6.51171 2.53036 6.1708C2.94502 5.34093 3.73706 5.04773 4.44152 5.02237C5.07762 4.99946 5.75449 5.17745 6.36097 5.39016C6.91355 5.58397 7.70443 5.94444 8.3763 6.25842C8.5976 5.89554 8.88932 5.48549 9.16548 5.15432L9.22034 5.08854L9.28382 5.03075C9.75896 4.59828 10.2927 4.45288 10.6994 4.42169C10.8988 4.4064 11.0705 4.41781 11.1989 4.43448C11.2638 4.44291 11.3198 4.45295 11.3652 4.46245C11.388 4.46721 11.4083 4.47188 11.426 4.4762C11.4349 4.47837 11.4431 4.48045 11.4507 4.48243L11.4616 4.48531L11.4666 4.48668L11.4691 4.48735L11.4703 4.48768C11.4703 4.48768 11.4715 4.48801 11.1424 5.7144C11.1424 5.7144 10.6292 5.57232 10.188 5.96175C10.1836 5.96567 10.1792 5.96965 10.1747 5.97368C10.161 5.99009 10.1473 6.0067 10.1336 6.02351C10.1139 6.04768 10.0941 6.07224 10.0743 6.09711C10.0685 6.10441 10.0627 6.11174 10.0569 6.1191C9.61666 6.67768 9.64277 6.91103 8.83914 7.87543C8.83914 7.87543 8.4205 7.68157 8.1701 7.56386C7.9983 7.48311 7.81669 7.39774 7.63164 7.31169C7.03464 7.03411 6.40173 6.74946 5.94628 6.58972C4.82494 6.19643 3.99821 6.14651 3.69645 6.75042C3.29839 7.54707 4.9148 8.00866 5.72705 8.24061C5.8981 8.28945 6.03349 8.32811 6.10689 8.35758C6.52348 8.52479 6.55255 8.86031 6.42848 9.16103C6.35609 9.33651 6.31482 9.43541 6.10706 9.64317C5.78563 9.9646 5.73292 10.3452 5.7943 10.6078C5.82503 10.7392 5.88582 10.8348 5.95809 10.9044C6.15197 11.0909 6.42842 11.0897 6.42842 11.0897C6.42842 11.0897 6.25016 11.5453 6.26759 12.0541C6.27143 12.1661 6.30155 12.268 6.35346 12.3612C6.66163 12.9145 7.73774 13.1596 8.64189 13.3655C9.02162 13.452 9.37102 13.5316 9.62046 13.6242C10.0676 13.7726 11.8925 14.1433 11.8925 14.1433C12.2292 14.2317 12.438 14.1247 12.9919 13.3864C13.2219 13.0797 13.653 12.2123 13.6583 11.7435C13.5884 11.7134 13.5835 11.7029 13.5786 11.6924C13.5718 11.6779 13.565 11.6633 13.3882 11.5974C13.329 11.5754 13.2499 11.5504 13.1593 11.5218C12.7822 11.4029 12.2071 11.2215 12.0534 10.929C11.9788 10.787 11.9846 10.5964 11.9915 10.3736C12.0022 10.0271 12.0153 9.60261 11.732 9.16115C11.6624 9.05276 11.5957 8.95523 11.5333 8.864C11.1781 8.34469 10.9626 8.0296 11.1573 7.07742ZM5.21736 8.64574C5.21818 8.64341 5.21787 8.64394 5.21684 8.64717L5.21736 8.64574ZM13.2859 10.6214C13.2859 10.6214 13.2859 10.6164 13.2849 10.6077C13.2852 10.6173 13.2859 10.6214 13.2859 10.6214Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </span>
+                        <div class="title">Made with Manus</div>
+                        <div class="create-title">Create my website</div>
+                    </a>
+                </div>
+
+                <div class="page-footer-mobile">
+                    <div class="footer-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path
+                                d="M13.2251 16.9379C14.4717 16.147 15.3336 11.9052 15.144 10.6421C15.144 10.6421 14.9464 9.96396 14.4643 9.96394C13.9821 9.96391 13.7815 10.4719 13.7815 10.4719C13.7815 10.4719 13.6546 10.9409 13.4555 11.5313C13.1474 12.4447 13.0178 13.5718 12.2143 13.8571C11.4107 14.1425 10.6071 13.8725 10.6071 13.8725C11.1535 15.9448 11.9785 17.7288 13.2251 16.9379Z"
+                                fill="white"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M7.04826 9.17689C6.59029 9.22824 6.34906 9.40136 6.26768 9.48274C5.94625 9.80417 5.78554 10.1256 5.78554 10.2863C5.78554 10.447 5.40745 9.53393 5.32437 9.44837C5.07703 9.19366 5.083 8.78667 5.33771 8.53933C5.69527 8.19212 6.28003 7.96925 6.90502 7.89918C7.55323 7.82651 8.3219 7.9075 9.09971 8.25205C10.0075 8.65415 10.4937 9.50199 10.6773 10.2768C10.7705 10.6701 10.7943 11.0743 10.7466 11.4426C10.7002 11.8002 10.5781 12.1826 10.3242 12.4736C9.79525 13.0799 9.01508 13.0116 8.593 12.9221C8.35518 12.8716 8.14542 12.7975 7.99786 12.738C7.92303 12.7079 7.86158 12.6804 7.81747 12.6597C7.79535 12.6493 7.77743 12.6406 7.7642 12.6341C7.75757 12.6308 7.75211 12.628 7.74786 12.6259L7.7424 12.6231L7.74037 12.622L7.73915 12.6214C7.73915 12.6214 7.7388 12.6212 8.03568 12.051L7.7388 12.6212C7.42389 12.4573 7.30152 12.069 7.46548 11.7541C7.62912 11.4398 8.01612 11.3173 8.3307 11.4798M8.3307 11.4798L8.33145 11.4802L8.3307 11.4798ZM8.3307 11.4798L8.33531 11.4822C8.34052 11.4847 8.3498 11.4893 8.36271 11.4953C8.38864 11.5075 8.42852 11.5254 8.4788 11.5457C8.58146 11.5871 8.71705 11.6341 8.85982 11.6644C9.19892 11.7363 9.32081 11.668 9.3554 11.6284C9.38325 11.5965 9.44396 11.4899 9.47154 11.2773C9.49771 11.0755 9.48663 10.8281 9.42625 10.5733C9.30267 10.0519 9.00685 9.61712 8.57899 9.42759C8.02117 9.1805 7.48301 9.12815 7.04826 9.17689"
+                                fill="white"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M2.79812 2.53348C2.64176 2.85224 2.7734 3.2374 3.09216 3.39376C3.55 3.61834 3.94731 3.83979 4.34068 4.28331C4.57627 4.54892 4.98258 4.57326 5.2482 4.33767C5.51381 4.10208 5.53815 3.69577 5.30256 3.43016C4.742 2.79815 4.16499 2.48794 3.65839 2.23944C3.33963 2.08308 2.95448 2.21473 2.79812 2.53348Z"
+                                fill="white"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M6.27275 0.662519C5.92831 0.748629 5.71889 1.09766 5.805 1.4421C5.86516 1.68274 5.92127 1.8885 5.97263 2.07686C6.07093 2.43738 6.15185 2.73415 6.21054 3.08969C6.26837 3.43999 6.59923 3.67708 6.94952 3.61926C7.29982 3.56143 7.53692 3.23058 7.47909 2.88028C7.40972 2.46006 7.3017 2.06246 7.19328 1.66338C7.14526 1.48666 7.09717 1.30966 7.05233 1.13027C6.96622 0.785827 6.61719 0.57641 6.27275 0.662519Z"
+                                fill="white"
+                            />
+                            <path
+                                d="M8.99979 3.21456C9.16051 2.57171 9.32122 2.08956 9.61377 1.60742"
+                                stroke="white"
+                                stroke-width="1.28571"
+                                stroke-miterlimit="10"
+                                stroke-linecap="round"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M11.3613 6.26832C12.6366 6.52316 12.6368 6.52221 12.6368 6.52221L12.637 6.52126L12.6373 6.51931L12.6381 6.51527L12.6396 6.50658C12.6407 6.50054 12.6418 6.49395 12.6429 6.48687C12.6452 6.47271 12.6476 6.45641 12.65 6.43816C12.6548 6.40191 12.6596 6.35662 12.6628 6.30419C12.6689 6.20315 12.6702 6.05635 12.6443 5.88608C12.5954 5.56354 12.4075 4.95215 11.7455 4.59774L11.6146 4.52762L11.4715 4.48801L11.1424 5.7144C11.4358 5.8715 11.3613 6.26832 11.3613 6.26832ZM11.1573 7.07742L11.3613 6.26832L12.6366 6.52316L12.6296 6.56049L12.4237 7.37732C12.3841 7.57807 12.3789 7.69285 12.381 7.75349C12.3828 7.80284 12.3892 7.81904 12.3924 7.82698L12.3927 7.8279C12.4008 7.84841 12.4216 7.89289 12.4977 8.00832C12.5287 8.05537 12.561 8.10252 12.6021 8.1626C12.613 8.1785 12.6245 8.19531 12.6367 8.21327C12.6919 8.29416 12.7565 8.38953 12.825 8.49621C13.2527 9.16281 13.2947 9.80259 13.2925 10.2126C13.2924 10.2186 13.2924 10.2246 13.2923 10.2305C13.3435 10.2481 13.3978 10.2658 13.4555 10.2841C13.4745 10.2902 13.4997 10.2982 13.5262 10.3065C13.5634 10.3183 13.6031 10.3308 13.6314 10.3399C13.6872 10.3577 13.7584 10.381 13.8272 10.4067C13.8751 10.4245 13.9211 10.4423 13.9644 10.4603C14.0059 10.4775 14.0566 10.4995 14.1099 10.5264C14.1513 10.5473 14.2186 10.5831 14.2948 10.6359L14.9647 10.9242L14.955 11.7823C14.9493 12.2868 14.7463 12.8187 14.6023 13.148C14.4436 13.5111 14.2339 13.8983 14.0408 14.1556C13.7712 14.515 13.4657 14.8945 13.0981 15.1372C12.8815 15.2802 12.6198 15.394 12.3111 15.4313C12.0361 15.4645 11.7981 15.4277 11.6232 15.3851L11.5717 15.3745C11.5199 15.3639 11.4456 15.3486 11.3553 15.3298C11.1748 15.2922 10.9287 15.2404 10.6678 15.1837C10.1867 15.0793 9.53471 14.9331 9.22715 14.8311L9.20492 14.8237L9.18296 14.8155C9.04655 14.7649 8.81591 14.7081 8.43387 14.621C8.41077 14.6157 8.38722 14.6103 8.36328 14.6049C8.03371 14.5299 7.6281 14.4376 7.24401 14.3212C6.8462 14.2008 6.35418 14.0216 5.9364 13.7296C5.4979 13.4232 4.99936 12.8829 4.9716 12.0723C4.96744 11.951 4.97023 11.8337 4.97774 11.7224C4.78027 11.5084 4.61454 11.2286 4.53078 10.8703C4.44918 10.5212 4.49431 10.2118 4.55156 9.99459C4.60897 9.7768 4.69617 9.58643 4.76904 9.44413C4.79364 9.3961 4.81915 9.34874 4.8446 9.30298C4.60356 9.22692 4.3313 9.13294 4.06631 9.01999C3.72023 8.87246 3.22918 8.62908 2.86258 8.2362C2.66514 8.0246 2.4584 7.72132 2.37481 7.3248C2.28733 6.90985 2.36002 6.51171 2.53036 6.1708C2.94502 5.34093 3.73706 5.04773 4.44152 5.02237C5.07762 4.99946 5.75449 5.17745 6.36097 5.39016C6.91355 5.58397 7.70443 5.94444 8.3763 6.25842C8.5976 5.89554 8.88932 5.48549 9.16548 5.15432L9.22034 5.08854L9.28382 5.03075C9.75896 4.59828 10.2927 4.45288 10.6994 4.42169C10.8988 4.4064 11.0705 4.41781 11.1989 4.43448C11.2638 4.44291 11.3198 4.45295 11.3652 4.46245C11.388 4.46721 11.4083 4.47188 11.426 4.4762C11.4349 4.47837 11.4431 4.48045 11.4507 4.48243L11.4616 4.48531L11.4666 4.48668L11.4691 4.48735L11.4703 4.48768C11.4703 4.48768 11.4715 4.48801 11.1424 5.7144C11.1424 5.7144 10.6292 5.57232 10.188 5.96175C10.1836 5.96567 10.1792 5.96965 10.1747 5.97368C10.161 5.99009 10.1473 6.0067 10.1336 6.02351C10.1139 6.04768 10.0941 6.07224 10.0743 6.09711C10.0685 6.10441 10.0627 6.11174 10.0569 6.1191C9.61666 6.67768 9.64277 6.91103 8.83914 7.87543C8.83914 7.87543 8.4205 7.68157 8.1701 7.56386C7.9983 7.48311 7.81669 7.39774 7.63164 7.31169C7.03464 7.03411 6.40173 6.74946 5.94628 6.58972C4.82494 6.19643 3.99821 6.14651 3.69645 6.75042C3.29839 7.54707 4.9148 8.00866 5.72705 8.24061C5.8981 8.28945 6.03349 8.32811 6.10689 8.35758C6.52348 8.52479 6.55255 8.86031 6.42848 9.16103C6.35609 9.33651 6.31482 9.43541 6.10706 9.64317C5.78563 9.9646 5.73292 10.3452 5.7943 10.6078C5.82503 10.7392 5.88582 10.8348 5.95809 10.9044C6.15197 11.0909 6.42842 11.0897 6.42842 11.0897C6.42842 11.0897 6.25016 11.5453 6.26759 12.0541C6.27143 12.1661 6.30155 12.268 6.35346 12.3612C6.66163 12.9145 7.73774 13.1596 8.64189 13.3655C9.02162 13.452 9.37102 13.5316 9.62046 13.6242C10.0676 13.7726 11.8925 14.1433 11.8925 14.1433C12.2292 14.2317 12.438 14.1247 12.9919 13.3864C13.2219 13.0797 13.653 12.2123 13.6583 11.7435C13.5884 11.7134 13.5835 11.7029 13.5786 11.6924C13.5718 11.6779 13.565 11.6633 13.3882 11.5974C13.329 11.5754 13.2499 11.5504 13.1593 11.5218C12.7822 11.4029 12.2071 11.2215 12.0534 10.929C11.9788 10.787 11.9846 10.5964 11.9915 10.3736C12.0022 10.0271 12.0153 9.60261 11.732 9.16115C11.6624 9.05276 11.5957 8.95523 11.5333 8.864C11.1781 8.34469 10.9626 8.0296 11.1573 7.07742ZM5.21736 8.64574C5.21818 8.64341 5.21787 8.64394 5.21684 8.64717L5.21736 8.64574ZM13.2859 10.6214C13.2859 10.6214 13.2859 10.6164 13.2849 10.6077C13.2852 10.6173 13.2859 10.6214 13.2859 10.6214Z"
+                                fill="white"
+                            />
+                        </svg>
+                        <div class="title">Made with Manus</div>
+                        <div class="create-title">Create my website</div>
+                    </div>
+                    <div class="footer-dialog">
+                        <div class="dialog-box">
+                            <div class="dialog-header">
+                                <div class="dialog-header-title">Made with Manus</div>
+                                <span class="dialog-header-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M3.2729 3.27192C3.5365 3.00832 3.96389 3.00832 4.22749 3.27192L9.0002 8.04462L13.7729 3.27192C14.0365 3.00832 14.4639 3.00832 14.7275 3.27192C14.9911 3.53553 14.9911 3.96291 14.7275 4.22652L9.95479 8.99922L14.7275 13.7719C14.9911 14.0355 14.9911 14.4629 14.7275 14.7265C14.4639 14.9901 14.0365 14.9901 13.7729 14.7265L9.0002 9.95381L4.22749 14.7265C3.96389 14.9901 3.5365 14.9901 3.2729 14.7265C3.00929 14.4629 3.00929 14.0355 3.2729 13.7719L8.0456 8.99922L3.2729 4.22652C3.00929 3.96291 3.00929 3.53553 3.2729 3.27192Z"
+                                            fill="#858481"
+                                        />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="dialog-body">
+                                <div>This user-generated website was created with AI. Use with caution.</div>
+                                <div>
+                                    Not an official Manus website nor endorsed by Manus. Content may contain inaccuracies; double-check before use. Do not submit
+                                    passwords, credit cards, or personal information.
+                                </div>
+                            </div>
+                            <div class="dialog-footer">
+                                <div class="dialog-footer-button-left">Cancel</div>
+                                <div class="dialog-footer-button-right" onclick="createSite()">Create my website</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+                // 创建样式
+                const style = document.createElement('style');
+                style.textContent = `
+            @keyframes changeWidth {
+                0% {
+                    width: 150px;
+                    background-color: transparent;
+                }
+                100% {
+                    width: 574px;
+                    background-color: #fff;
+                }
+            }
+
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                border: unset;
+            }
+
+            * {
+                line-height: 1.2;
+                text-shadow: initial;
+                font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            }
+
+            a {
+                text-decoration: unset;
+            }
+
+            .page-footer-mobile {
+                z-index: 10000;
+                display: none;
+                position: absolute;
+                right: 16px;
+                bottom: 16px;
+            }
+
+            .page-footer {
+                z-index: 10000;
+                display: flex;
+                padding: 4px 4px 4px 12px;
+                align-items: center;
+                gap: 16px;
+                position: fixed;
+                right: 16px;
+                bottom: 16px;
+                border-radius: 24px;
+                border: 1px solid transparent;
+                background: transparent;
+                transition: 0.3s;
+            }
+
+            .footer-close-btn {
+                display: none;
+                z-index: 10002;
+                cursor: pointer;
+                position: absolute;
+                right: -3px;
+                top: -3px;
+            }
+
+            .footer-bg {
+                overflow: hidden;
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+                height: 38px;
+                width: 150px;
+                background-color: transparent;
+                border-radius: 24px;
+            }
+
+            .tooltip-box {
+                display: none;
+                transition: 0.3s;
+                z-index: 10001;
+                align-items: center;
+                gap: 1px;
+            }
+
+            .tooltip-desc {
+                color: #858481;
+                /* Label/Primary */
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 16px; /* 133.333% */
+            }
+
+            .footer-button {
+                z-index: 10001;
+                right: 16px;
+                bottom: 16px;
+                user-select: none;
+                cursor: pointer;
+                display: flex;
+                padding: 5px 10px;
+                align-items: center;
+                height: 30px;
+                gap: 2px;
+                transition: 0.3s;
+                border-radius: 14px;
+                border: 1px solid rgba(0, 0, 0, 0.06);
+                background: #1a1a19;
+                box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.06), 0px 8px 32px 0px rgba(0, 0, 0, 0.06);
+            }
+
+            .footer-logo {
+                width: 18px;
+                height: 18px;
+            }
+
+            .footer-button:hover .create-title {
+                opacity: 0.8;
+            }
+
+            .footer-button:hover .footer-logo {
+                opacity: 0.8;
+            }
+
+            .page-footer:hover .footer-close-btn {
+                display: block;
+            }
+
+            .page-footer:hover .create-title {
+                display: block;
+            }
+
+            .page-footer:hover .title {
+                display: none;
+            }
+
+            .page-footer:hover .footer-bg {
+                animation: changeWidth 0.3s ease-in-out forwards;
+                border: 1px solid rgba(0, 0, 0, 0.06);
+                background: #fff;
+                box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.06), 0px 8px 32px 0px rgba(0, 0, 0, 0.06);
+            }
+
+            .page-footer:hover .tooltip-box {
+                position: absolute;
+                text-wrap-mode: nowrap;
+                display: flex;
+                left: 10px;
+                top: 9px;
+            }
+
+            .tooltip-icon {
+                position: relative;
+                cursor: pointer;
+            }
+
+            .tooltip-dialog {
+                display: none;
+                position: absolute;
+                bottom: 154%;
+                left: -10%;
+                transform: translateX(-50%);
+                padding: 10px;
+                border-radius: 12px;
+                font-size: 12px;
+                line-height: 16px;
+                background-color: #171818;
+                color: #fff;
+                max-width: 280px;
+                width: max-content;
+            }
+
+            .title {
+                color: #fff;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 16px;
+            }
+
+            .create-title {
+                display: none;
+                color: #fff;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+            }
+
+            .footer-dialog {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                display: none;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .dialog-box {
+                display: flex;
+                width: 358px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+                border-radius: 20px;
+                border: 1px solid rgba(255, 255, 255, 0.04);
+                background: #fff;
+
+                /* menu/main */
+                box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.02), 0px 4px 32px 0px rgba(0, 0, 0, 0.16);
+                backdrop-filter: blur(40px);
+            }
+
+            .dialog-header {
+                display: flex;
+                padding: 16px 12px 8px 16px;
+                align-items: flex-start;
+                gap: 16px;
+                align-self: stretch;
+            }
+
+            .dialog-header-title {
+                flex: 1;
+                color: #34322d;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+            }
+
+            .dialog-body {
+                display: flex;
+                padding: 0px 16px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+                align-self: stretch;
+                color: #535350;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+            .dialog-footer {
+                display: flex;
+                padding: 16px;
+                align-items: flex-start;
+                gap: 12px;
+                align-self: stretch;
+            }
+
+            .dialog-footer-button-left {
+                display: flex;
+                width: 119px;
+                min-width: 114px;
+                min-height: 48px;
+                padding: 12px 24px;
+                justify-content: center;
+                align-items: center;
+                gap: 6px;
+                border-radius: 12px;
+                background: rgba(55, 53, 47, 0.06);
+                color: #34322d;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+            }
+
+            .dialog-footer-button-right {
+                display: flex;
+                min-width: 114px;
+                min-height: 48px;
+                padding: 12px 24px;
+                justify-content: center;
+                align-items: center;
+                gap: 6px;
+                flex: 1 0 0;
+                border-radius: 12px;
+                background: #1a1a19;
+                color: #fff;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+            }
+
+            @media (max-width: 600px) {
+                .page-footer {
+                    display: none;
+                }
+                .page-footer-mobile {
+                    display: block;
+                }
+                .footer-button {
+                    position: fixed
+                }
+            }
+            `;
+                // 将样式和内容添加到Shadow DOM
+                shadow.appendChild(style);
+                shadow.appendChild(wrapper);
+
+                // 在connectedCallback中设置事件监听器
+                this.setupEventListeners(shadow);
+            }
+            onclickEvent(shadow, domStr, fn) {
+                const clickDom = shadow.querySelector(domStr);
+                if (clickDom) {
+                    clickDom.onclick = (event) => {
+                        fn(event, clickDom);
+                    };
+                }
+            }
+            setupEventListeners(shadow) {
+                const changeDialogStyle = (displayStatus) => {
+                    const dialog = shadow.querySelector('.footer-dialog');
+                    if (dialog) {
+                        dialog.style.display = displayStatus;
+                    }
+                };
+
+                const createSite = () => {
+                    window.open('https://manus.im/invitation?from=space', '_blank');
+                    changeDialogStyle('none');
+                };
+
+                this.onclickEvent(shadow, '.page-footer-mobile .dialog-footer-button-left', () => {
+                    changeDialogStyle('none');
+                });
+
+                this.onclickEvent(shadow, '.page-footer-mobile .dialog-footer-button-right', () => {
+                    createSite();
+                });
+
+                this.onclickEvent(shadow, '.page-footer-mobile .dialog-header-icon', () => {
+                    changeDialogStyle('none');
+                });
+
+                this.onclickEvent(shadow, '.page-footer-mobile .footer-button', () => {
+                    changeDialogStyle('flex');
+                });
+
+                this.onclickEvent(shadow, '.footer-close-btn', () => {
+                    localStorage.setItem('embedClosed', 'true');
+                    shadow.querySelector('.page-footer').style.display = 'none';
+                    shadow.querySelector('.page-footer-mobile').style.display = 'none';
+                });
+
+                this.onclickEvent(shadow, '.page-footer-mobile .footer-dialog', (event, dialog) => {
+                    if (event.target === dialog) {
+                        changeDialogStyle('none');
+                    }
+                });
+
+                const tooltipIcon = shadow.querySelector('.tooltip-icon');
+                const tooltipDialog = shadow.querySelector('.tooltip-dialog');
+
+                tooltipIcon.addEventListener('mouseenter', function () {
+                    tooltipDialog.style.display = 'block';
+                });
+
+                tooltipIcon.addEventListener('mouseleave', function () {
+                    tooltipDialog.style.display = 'none';
+                });
+
+                if (localStorage.getItem('embedClosed')) {
+                    shadow.querySelector('.page-footer').style.display = 'none';
+                    shadow.querySelector('.page-footer-mobile').style.display = 'none';
+                }
+            }
+        }
+        // 注册自定义元素
+        customElements.define('footer-btn', FooterBtn);
+    </script>
+    <script defer data-domain="manus.space"
+        src="https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"></script>
+    <script>
+        window.plausible =
+            window.plausible ||
+            function () {
+                (window.plausible.q = window.plausible.q || []).push(arguments);
+            };
+        plausible('custom-pageview', {
+            props: {
+                domain: window.location.host
+            }
+        })
+    </script>
+</body>
+
+</html>
